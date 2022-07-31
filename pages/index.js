@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Blog from './blog';
-
+import { Header } from '../components/Header';
 import { getDatabase } from '../lib/notion';
 
 export const databaseId = process.env.NOTION_DATABASE_ID;
@@ -14,19 +14,20 @@ export default function Home({ posts }) {
   };
 
   return (
-    <>
+    <main className="container mx-auto px-12">
+      <Header />
       <Blog posts={posts?.slice(0, showMore)} />
       {visiblePosts < posts?.length && (
         <div className="flex justify-center">
           <button
-            className="bg-indigo-100 text-indigo-800 font-semibold py-2 px-4 my-8 rounded"
+            className="bg-indigo-100 text-indigo-800 dark:bg-green-100 dark:text-green-800 font-semibold py-2 px-4 my-8 rounded"
             onClick={handleLoadMore}
           >
             Load More
           </button>
         </div>
       )}
-    </>
+    </main>
   );
 }
 
