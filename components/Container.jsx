@@ -1,6 +1,5 @@
 import { useRouter } from 'next/router';
 import Head from 'next/head';
-import { Navbar } from './Navbar';
 import { Footer } from './Footer';
 
 export default function Container(props) {
@@ -13,10 +12,9 @@ export default function Container(props) {
     image: '/site.png',
     ...customMeta
   };
-
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
         <meta name="viewport" content="width=device-width" />
@@ -42,11 +40,8 @@ export default function Container(props) {
         {meta.date && (
           <meta property="article:published_time" content={meta.date} />
         )}
-      </Head>
-      <Navbar />
-      <main id="skip" className="pt-40">
-        {children}
-      </main>
+      </Head> */}
+      <main className="container mx-auto px-12">{children}</main>
     </>
   );
 }

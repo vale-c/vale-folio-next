@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Blog from './blog';
-import { Navbar } from '../components/Navbar';
+import { NavHeader } from '../components/NavHeader';
 import { getDatabase } from '../lib/notion';
+import Container from '../components/Container';
 import { Hero } from '../components/Hero';
 export const databaseId = process.env.NOTION_DATABASE_ID;
 
@@ -14,8 +15,8 @@ export default function Home({ posts }) {
   };
 
   return (
-    <main className="container mx-auto px-12">
-      <Navbar />
+    <>
+      <NavHeader />
       <Hero />
       <Blog posts={posts?.slice(0, showMore)} />
       {visiblePosts < posts?.length && (
@@ -28,7 +29,7 @@ export default function Home({ posts }) {
           </button>
         </div>
       )}
-    </main>
+    </>
   );
 }
 

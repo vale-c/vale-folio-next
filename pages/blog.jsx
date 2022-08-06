@@ -1,17 +1,12 @@
-import Head from 'next/head';
+import Container from '../components/Container';
 import { Fragment } from 'react';
 import { motion } from 'framer-motion';
 import { getDatabase } from '../lib/notion';
-
 export const databaseId = process.env.NOTION_DATABASE_ID;
 
 export function Blog({ posts }) {
   return (
-    <>
-      <Head>
-        <title>Vale's Portfolio - Blog</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Container>
       <h2 className="text-2xl font-roboto my-8 text-gray-800 dark:text-gray-50">
         Blog Posts
       </h2>
@@ -39,10 +34,10 @@ export function Blog({ posts }) {
                       src={covers?.[0]?.file?.url || covers?.[0]?.external?.url}
                     />
                     <div className="p-4">
-                      <div className="text-sm font-light mb-1 text-slate-400">
+                      <div className="text-sm font-light mb-1 text-gray-400">
                         {dates}
                       </div>
-                      <div className="text-lg font-semibold mb-1 text-slate-800 dark:text-slate-50">
+                      <div className="text-lg font-semibold mb-1 text-gray-800 dark:text-gray-50">
                         {titles}
                       </div>
                       <div className="text-sm font-medium`">{descriptions}</div>
@@ -64,7 +59,7 @@ export function Blog({ posts }) {
           );
         })}
       </div>
-    </>
+    </Container>
   );
 }
 

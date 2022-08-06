@@ -7,22 +7,43 @@ export default function Post({ page, blocks }) {
   if (!page || !blocks) {
     return <div />;
   }
-  console.log('blocks', blocks);
+  console.log(page);
   return (
     <BlogLayout data={page} content={blocks}>
-      <span className="text-sm text-gray-400">
+      <div className="absolute top-0 left-0 w-screen">
+        <img
+          className="object-cover h-32 w-full"
+          src={page?.cover?.external?.url || '/images/bg-cover.jpeg'}
+          alt={page.Title}
+        />
+        <div className="flex justify-center -mt-14">
+          <span
+            className="text-5xl my-8"
+            alt={page.properties.slug.rich_text[0].plain_text}
+          >
+            {page.icon.emoji}
+          </span>
+        </div>
+      </div>
+      <h1 className="mt-32 mb-8 text-3xl font-bold tracking-tight text-indigo-400 dark:text-green-400 md:text-5xl">
+        {page.properties.Title.title[0].plain_text}
+      </h1>
+      <span className="mb-6 text-sm text-gray-400">
         {new Date(page.created_time).toLocaleString('en-US', {
           month: 'short',
           day: '2-digit',
           year: 'numeric'
         })}
       </span>
-
-      <h1 className="mb-5 text-3xl font-bold tracking-tight text-black md:text-5xl">
-        {page.properties.Title.title[0].plain_text}
-      </h1>
-
       <RenderBlocks blocks={blocks} />
+      <div className="flex justify-center">
+        <a
+          href="/"
+          className="bg-indigo-100 text-indigo-700 dark:bg-green-100 dark:text-green-700 font-semibold py-2 px-4 my-8 rounded"
+        >
+          Back 🏠
+        </a>
+      </div>
     </BlogLayout>
   );
 }

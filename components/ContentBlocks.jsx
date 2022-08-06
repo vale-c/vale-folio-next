@@ -58,7 +58,7 @@ const SpanText = ({ text, id }) => {
         className={[
           bold ? 'font-bold' : '',
           code
-            ? 'text-black dark:text-slate-200 p-1 font-mono text-sm rounded-md'
+            ? 'text-black dark:text-gray-200 p-1 font-mono text-sm rounded-md'
             : '',
           italic ? 'italic' : '',
           strikethrough ? 'line-through' : '',
@@ -80,7 +80,7 @@ const SpanText = ({ text, id }) => {
 
 const Text = ({ text, id }) => {
   return (
-    <p className="mb-4 text-black dark:text-slate-200">
+    <p className="font-roboto font-light mb-4 text-black dark:text-gray-200">
       <SpanText text={text} id={id} />
     </p>
   );

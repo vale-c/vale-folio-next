@@ -4,10 +4,8 @@ import { useTheme } from 'next-themes';
 export const ToggleButton = () => {
   const [mounted, setMounted] = useState(false);
   const { resolvedTheme, setTheme } = useTheme();
-
   // After mounting, we have access to the theme
   useEffect(() => setMounted(true), []);
-
   return (
     <button
       aria-label="Toggle Dark Mode"
