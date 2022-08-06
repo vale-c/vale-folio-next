@@ -12,7 +12,6 @@ export function Blog({ posts }) {
         <title>Vale's Portfolio - Blog</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <h2 className="text-2xl font-roboto my-8 text-gray-800 dark:text-gray-50">
         Blog Posts
       </h2>
@@ -40,10 +39,10 @@ export function Blog({ posts }) {
                       src={covers?.[0]?.file?.url || covers?.[0]?.external?.url}
                     />
                     <div className="p-4">
-                      <div className="text-sm font-light mb-1 text-gray-400">
+                      <div className="text-sm font-light mb-1 text-slate-400">
                         {dates}
                       </div>
-                      <div className="text-lg font-semibold mb-1 text-gray-800 dark:text-gray-50">
+                      <div className="text-lg font-semibold mb-1 text-slate-800 dark:text-slate-50">
                         {titles}
                       </div>
                       <div className="text-sm font-medium`">{descriptions}</div>

@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import Blog from './blog';
-import { Header } from '../components/Header';
+import { Navbar } from '../components/Navbar';
 import { getDatabase } from '../lib/notion';
-
+import { Hero } from '../components/Hero';
 export const databaseId = process.env.NOTION_DATABASE_ID;
 
 export default function Home({ posts }) {
-  const visiblePosts = 3;
+  const visiblePosts = 4;
   const [showMore, setShowMore] = useState(visiblePosts);
 
   const handleLoadMore = () => {
@@ -15,7 +15,8 @@ export default function Home({ posts }) {
 
   return (
     <main className="container mx-auto px-12">
-      <Header />
+      <Navbar />
+      <Hero />
       <Blog posts={posts?.slice(0, showMore)} />
       {visiblePosts < posts?.length && (
         <div className="flex justify-center">
