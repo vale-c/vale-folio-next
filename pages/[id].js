@@ -13,7 +13,11 @@ export default function Post({ page, blocks }) {
       <div className="absolute top-0 left-0 w-screen">
         <img
           className="object-cover h-32 w-full"
-          src={page?.cover?.external?.url || '/images/bg-cover.jpeg'}
+          src={
+            page?.cover?.external?.url ||
+            page?.cover?.file?.url ||
+            '/images/bg-cover.jpeg'
+          }
           alt={page.Title}
         />
         <div className="flex justify-center -mt-14">
