@@ -7,6 +7,9 @@ export default function Post({ page, blocks }) {
   if (!page || !blocks) {
     return <div />;
   }
+
+  const tags = page?.properties?.Tags?.multi_select ?? [];
+
   console.log(page);
   return (
     <BlogLayout data={page} content={blocks}>
@@ -20,20 +23,32 @@ export default function Post({ page, blocks }) {
           }
           alt={page.Title}
         />
-        <div className="flex justify-center -mt-14">
-          <span
-            className="text-5xl my-8"
-            alt={page.properties.slug.rich_text[0].plain_text}
-          >
-            {page.icon.emoji}
-          </span>
+      </div>
+      <div className="flex justify-center mt-6 z-40">
+        <div
+          className="text-5xl my-8"
+          alt={page.properties.slug.rich_text[0].plain_text}
+        >
+          {page.icon.emoji}
         </div>
       </div>
-      <h1 className="mt-32 mb-8 text-3xl font-bold tracking-tight text-indigo-400 dark:text-green-400 md:text-5xl">
+      <div className="flex space-around mb-12">
+        {tags.map((tag, id) => {
+          return (
+            <span
+              className="mr-4 ml-1 px-4 py-1.5 outline outline-2 outline-offset-1 outline-indigo-300 dark:outline-green-300 truncate text-xs font-light font-roboto rounded max-h-8"
+              key={id}
+            >
+              {tag.name}
+            </span>
+          );
+        })}
+      </div>
+      <h1 className="mb-8 text-3xl font-bold tracking-tight text-indigo-400 dark:text-green-400 md:text-5xl">
         {page.properties.Title.title[0].plain_text}
       </h1>
-      <span className="mb-6 text-sm text-gray-400">
-        {new Date(page.created_time).toLocaleString('en-US', {
+      <span className="mb-6 text-md text-gray-500">
+        {new Date(page.properties.Date.date.start).toLocaleString('en-US', {
           month: 'short',
           day: '2-digit',
           year: 'numeric'

@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import Blog from './blog';
 import { NavHeader } from '../components/NavHeader';
 import { getDatabase } from '../lib/notion';
-import Container from '../components/Container';
 import { Hero } from '../components/Hero';
+
 export const databaseId = process.env.NOTION_DATABASE_ID;
 
 export default function Home({ posts }) {
