@@ -1,8 +1,4 @@
 export const headerNavLinks = [
-  // {
-  //   title: 'Home',
-  //   slug: '/'
-  // },
   {
     title: 'About Me',
     slug: '/about/'
@@ -12,7 +8,7 @@ export const headerNavLinks = [
     slug: '/blog/'
   },
   {
-    title: 'Projects',
+    title: 'Work',
     slug: '/work/'
   },
   {

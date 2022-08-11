@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Blog from './blog';
-import { NavHeader } from '../components/NavHeader';
 import { getDatabase } from '../lib/notion';
 import { Hero } from '../components/Hero';
 
@@ -16,7 +15,6 @@ export default function Home({ posts }) {
 
   return (
     <>
-      <NavHeader />
       <Hero />
       <Blog posts={posts?.slice(0, showMore)} />
       {visiblePosts < posts?.length && (

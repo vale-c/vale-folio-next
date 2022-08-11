@@ -24,7 +24,7 @@ export function Blog({ posts }) {
             <Fragment key={postUrl}>
               <motion.div
                 whileHover={{ scale: 1.05 }}
-                whiletap={{ scale: 0.95 }}
+                whileTap={{ scale: 0.95 }}
               >
                 <div className="shadow-lg rounded-b-lg mb-4 pb-6">
                   <a href={`/${postUrl}`}>

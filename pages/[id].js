@@ -10,12 +10,11 @@ export default function Post({ page, blocks }) {
 
   const tags = page?.properties?.Tags?.multi_select ?? [];
 
-  console.log(page);
   return (
     <BlogLayout data={page} content={blocks}>
-      <div className="absolute top-0 left-0 w-screen">
+      <div className="fixed top-0 left-0 w-screen">
         <img
-          className="object-cover h-32 w-full"
+          className="object-cover h-52 w-full opacity-75"
           src={
             page?.cover?.external?.url ||
             page?.cover?.file?.url ||
@@ -24,15 +23,15 @@ export default function Post({ page, blocks }) {
           alt={page.Title}
         />
       </div>
-      <div className="flex justify-center mt-6 z-40">
+      <div className="relative mt-10 z-30">
         <div
-          className="text-5xl my-8"
+          className="text-5xl mt-32"
           alt={page.properties.slug.rich_text[0].plain_text}
         >
           {page.icon.emoji}
         </div>
       </div>
-      <div className="flex space-around mb-12">
+      <div className="flex space-around mt-16 mb-8">
         {tags.map((tag, id) => {
           return (
             <span

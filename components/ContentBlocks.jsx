@@ -32,8 +32,8 @@ export const RenderBlocks = ({ blocks }) => {
         const caption = value.caption ? value.caption[0]?.plain_text : '';
         return (
           <figure key={id}>
-            <img src={src} alt={caption} />
-            {caption && <figcaption mt="2">{caption}</figcaption>}
+            <img className="rounded-lg my-4" src={src} alt={caption} />
+            {caption && <figcaption>{caption}</figcaption>}
           </figure>
         );
       default:
