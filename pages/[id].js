@@ -14,7 +14,7 @@ export default function Post({ page, blocks }) {
     <BlogLayout data={page} content={blocks}>
       <div className="fixed top-0 left-0 w-screen">
         <img
-          className="object-cover h-52 w-full opacity-75"
+          className="object-cover h-52 w-full opacity-70"
           src={
             page?.cover?.external?.url ||
             page?.cover?.file?.url ||
@@ -23,7 +23,7 @@ export default function Post({ page, blocks }) {
           alt={page.Title}
         />
       </div>
-      <div className="relative mt-10 z-30">
+      <div className="relative mt-10">
         <div
           className="text-5xl mt-32"
           alt={page.properties.slug.rich_text[0].plain_text}
@@ -32,10 +32,11 @@ export default function Post({ page, blocks }) {
         </div>
       </div>
       <div className="flex space-around mt-16 mb-8">
+        <span className="text-2xl text-gray-500 font-bold mr-4">🔖 Tags:</span>
         {tags.map((tag, id) => {
           return (
             <span
-              className="mr-4 ml-1 px-4 py-1.5 outline outline-2 outline-offset-1 outline-indigo-300 dark:outline-green-300 truncate text-xs font-light font-roboto rounded max-h-8"
+              className="mr-4 ml-1 px-3 py-1.5 outline outline-2 outline-offset-1 outline-indigo-300 dark:outline-green-300 truncate text-xs font-light font-roboto rounded max-h-8"
               key={id}
             >
               {tag.name}

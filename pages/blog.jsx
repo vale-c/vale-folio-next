@@ -7,7 +7,7 @@ export const databaseId = process.env.NOTION_DATABASE_ID;
 export function Blog({ posts }) {
   return (
     <Container>
-      <h2 className="text-2xl font-roboto my-8 text-gray-800 dark:text-gray-50">
+      <h2 className="text-2xl font-roboto mt-24 mb-10 text-gray-800 dark:text-gray-50">
         Blog Posts
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">

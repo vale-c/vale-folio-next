@@ -60,21 +60,6 @@ export const NavHeader = ({ navShow }) => {
 
   return (
     <header>
-      {/* <Link href="/" aria-label="Vale's Next.js Portfolio">
-        <h1 className="text-3xl font-roboto cursor-pointer ml-10">
-          <motion.div
-            whileHover={{ scale: 0.95 }}
-            whileTap={{ scale: 1.05 }}
-            transition={{
-              ease: 'easeInOut'
-            }}
-          >
-            <span role="img" aria-label="sparkle-emoji">
-              ✨
-            </span>
-          </motion.div>
-        </h1>
-      </Link> */}
       <motion.nav
         variants={variants}
         initial="hidden"
@@ -132,49 +117,60 @@ export const NavHeader = ({ navShow }) => {
             content="https://www.techakhil.me/thumbnail.png"
           />
         </Head>
-        <div className="flex justify-end items-center">
-          <ul className="md:flex pointer-events-auto hidden items-center space-x-4 text-xs antialiased font-medium tracking-widest">
-            {headerNavLinks.map((link) => (
-              <li
-                key={link.title}
-                className="hover:underline underline-offset-4 px-4 py-2"
-              >
-                <Link
-                  href={link.slug}
-                  className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
+        <div className="flex">
+          <div className="ml-8 text-4xl font-extrabold drop-shadow-xl shadow-indigo-500/50 ">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-indigo-400">
+              <Link href="/" aria-label="Vale's Next.js Portfolio">
+                Vale
+              </Link>
+            </span>{' '}
+            ✨
+          </div>
+          <div className="flex ml-auto">
+            <ul className="md:flex pointer-events-auto hidden items-center space-x-4 text-xs antialiased font-medium tracking-widest">
+              {headerNavLinks.map((link) => (
+                <li
+                  key={link.title}
+                  className="text-xl font-bold hover:underline underline-offset-4 px-4 py-2"
+                  style={{ textShadow: 'white 0px 0px 10px' }}
                 >
-                  {link.title}
-                </Link>
-              </li>
-            ))}
-            <div className="ml-4 hidden sm:block">
-              <ToggleButton />
-            </div>
-          </ul>
-          <button
-            className="text-light pointer-events-auto md:hidden w-10 h-10 relative focus:outline-none"
-            onClick={() => {
-              setisOpen(!isOpen);
-            }}
-          >
-            <div className=" block w-10 absolute left-1/2 top-1/2  transform  -translate-x-1/2 -translate-y-1/2 ">
-              <span
-                className={`block rounded-full absolute h-0.5 w-9 bg-current transform transition duration-1000 ease-in-out ${
-                  isOpen ? '-rotate-45' : '-translate-y-2.5'
-                }`}
-              ></span>
-              <span
-                className={`block rounded-full absolute  h-0.5 w-9 bg-current   transform transition duration-1000 ease-in-out ${
-                  isOpen ? '-translate-x-10 opacity-0' : ''
-                }`}
-              ></span>
-              <span
-                className={`block rounded-full absolute  h-0.5 w-9 bg-current transform  transition duration-1000 ease-in-out ${
-                  isOpen ? 'rotate-45' : 'translate-y-2.5'
-                }`}
-              ></span>
-            </div>
-          </button>
+                  <Link
+                    href={link.slug}
+                    className="tracking-widesttext-gray-900 dark:text-gray-100"
+                  >
+                    {link.title}
+                  </Link>
+                </li>
+              ))}
+              <div className="ml-4 hidden sm:block">
+                <ToggleButton />
+              </div>
+            </ul>
+            <button
+              className="text-light pointer-events-auto md:hidden w-10 h-10 relative focus:outline-none"
+              onClick={() => {
+                setisOpen(!isOpen);
+              }}
+            >
+              <div className=" block w-10 absolute left-1/2 top-1/2  transform  -translate-x-1/2 -translate-y-1/2 ">
+                <span
+                  className={`block rounded-full absolute h-0.5 w-9 bg-current transform transition duration-1000 ease-in-out ${
+                    isOpen ? '-rotate-45' : '-translate-y-2.5'
+                  }`}
+                ></span>
+                <span
+                  className={`block rounded-full absolute  h-0.5 w-9 bg-current   transform transition duration-1000 ease-in-out ${
+                    isOpen ? '-translate-x-10 opacity-0' : ''
+                  }`}
+                ></span>
+                <span
+                  className={`block rounded-full absolute  h-0.5 w-9 bg-current transform  transition duration-1000 ease-in-out ${
+                    isOpen ? 'rotate-45' : 'translate-y-2.5'
+                  }`}
+                ></span>
+              </div>
+            </button>
+          </div>
         </div>
         <AnimatePresence initial={false}>
           {isOpen && (
