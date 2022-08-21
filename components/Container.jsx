@@ -1,6 +1,5 @@
 import { useRouter } from 'next/router';
 import Head from 'next/head';
-import Link from 'next/link';
 
 export default function Container(props) {
   const { children, ...customMeta } = props;

@@ -8,7 +8,7 @@ import { Title } from '../components/elements/Titles';
 
 const Work = ({ isWorkPage = true }) => {
   return (
-    <div className="flex flex-col mb-12 px-8 sm:px-0">
+    <div className="flex flex-col mb-12 py-8 sm:py-0">
       {isWorkPage && (
         <div className="py-16">
           <div className="fixed top-0 left-0 w-screen">
@@ -90,45 +90,47 @@ const Work = ({ isWorkPage = true }) => {
       <h3 className="font-lato my-4 text-gray-800 dark:text-gray-50">
         Here are some of my Design projects.
       </h3>
-      <ProjectsWrapper>
-        <ProjectCard
-          title="Classically"
-          link="https://dribbble.com/shots/6024845-Classy-Classical-Music-App-Concept"
-          background="linear-gradient(to right, #FF416C 0%, #FF4B2B 100%)"
-        >
-          <InnerCardText>
-            This project is a concept for an educational app about classical
-            music.
-          </InnerCardText>
-        </ProjectCard>
-        <ProjectCard
-          title="Winter Wonderland"
-          link="https://dribbble.com/shots/14815633-Ski-Mobile-App-Concept"
-          background="linear-gradient(to right, #4568DC 0%, #B06AB3 100%)"
-        >
-          <InnerCardText>A concept for a Ski Mobile App.</InnerCardText>
-        </ProjectCard>
-        <ProjectCard
-          title="Safe-fi"
-          link="https://dribbble.com/shots/4307518-Secured"
-          background="linear-gradient(to right, #2c3e50 0%, #3498db 100%)"
-        >
-          <InnerCardText>
-            This is a paywall mockup for a VPN app allowing people to surf the
-            Web in a more secure way.
-          </InnerCardText>
-        </ProjectCard>
-        <ProjectCard
-          title="Fontsy"
-          link="https://dribbble.com/shots/4307574-Fancy-Fonts"
-          background="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
-        >
-          <InnerCardText>
-            A fancy paywall for a photo editing app specialized in adding
-            gorgeous texts to your images.
-          </InnerCardText>
-        </ProjectCard>
-      </ProjectsWrapper>
+      <div className="mb-8">
+        <ProjectsWrapper>
+          <ProjectCard
+            title="Classically"
+            link="https://dribbble.com/shots/6024845-Classy-Classical-Music-App-Concept"
+            background="linear-gradient(to right, #FF416C 0%, #FF4B2B 100%)"
+          >
+            <InnerCardText>
+              This project is a concept for an educational app about classical
+              music.
+            </InnerCardText>
+          </ProjectCard>
+          <ProjectCard
+            title="Winter Wonderland"
+            link="https://dribbble.com/shots/14815633-Ski-Mobile-App-Concept"
+            background="linear-gradient(to right, #4568DC 0%, #B06AB3 100%)"
+          >
+            <InnerCardText>A concept for a Ski Mobile App.</InnerCardText>
+          </ProjectCard>
+          <ProjectCard
+            title="Safe-fi"
+            link="https://dribbble.com/shots/4307518-Secured"
+            background="linear-gradient(to right, #2c3e50 0%, #3498db 100%)"
+          >
+            <InnerCardText>
+              This is a paywall mockup for a VPN app allowing people to surf the
+              Web in a more secure way.
+            </InnerCardText>
+          </ProjectCard>
+          <ProjectCard
+            title="Fontsy"
+            link="https://dribbble.com/shots/4307574-Fancy-Fonts"
+            background="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
+          >
+            <InnerCardText>
+              A fancy paywall for a photo editing app specialized in adding
+              gorgeous texts to your images.
+            </InnerCardText>
+          </ProjectCard>
+        </ProjectsWrapper>
+      </div>
     </div>
   );
 };

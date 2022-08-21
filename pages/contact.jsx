@@ -2,8 +2,8 @@ import React from 'react';
 import { Hero } from '../components/Hero';
 
 const Contact = () => (
-  <div className="flex flex-col items-center justify-center h-screen">
-    <div className="mb-8">
+  <div className="flex flex-col items-center justify-center h-screen py-8">
+    <div className="mb-10">
       <Hero image="/images/vale-email.png" height="350" width="350" />
     </div>
     <div

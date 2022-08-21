@@ -7,7 +7,6 @@ import Work from './work';
 import Loader from '../components/Loader';
 import { useAnimation } from 'framer-motion';
 import Link from 'next/link';
-import { ParticlesComponent } from '../components/ParticlesComponent';
 
 export const databaseId = process.env.NOTION_DATABASE_ID;
 
@@ -36,7 +35,6 @@ export default function Home({ posts }) {
   }
   return (
     <Container>
-      <ParticlesComponent />
       <Hero image="/images/vale-wave.png" height="400" width="400" />
       <Work isWorkPage={false} />
       <Blog posts={posts?.slice(0, showMore)} />
