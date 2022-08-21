@@ -21,7 +21,9 @@
     "react-device-detect": "^2.2.2",
     "react-dom": "^18.2.0",
     "react-locomotive-scroll": "^0.2.2",
+    "react-particles": "^2.2.2",
     "styled-components": "^5.3.5",
+    "tsparticles": "^2.2.2",
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
