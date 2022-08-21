@@ -17,5 +17,5 @@ export const Hero = ({ height, image, width }) => (
 Hero.propTypes = {
   height: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
-  width: PropTypes.number.isRequired
+  width: PropTypes.string.isRequired
 };

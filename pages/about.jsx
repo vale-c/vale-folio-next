@@ -41,7 +41,7 @@ const AboutPage = () => {
 
   return (
     <>
-      <AnimatePresence exitBeforeEnter initial={false}>
+      <AnimatePresence initial={false}>
         {isLoading ? <Loader /> : null}
       </AnimatePresence>
       <motion.section

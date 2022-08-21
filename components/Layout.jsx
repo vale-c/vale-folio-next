@@ -25,8 +25,7 @@ const Layout = (props) => {
         containerRef={containerRef}
         onLocationChange={(scroll) =>
           scroll.scrollTo(0, { duration: 0, disableLerp: true })
-        } // If you want to reset the scroll position to 0 for example
-        onUpdate={() => console.log('Updated, but not on location change!')}
+        }
       >
         <div data-scroll-container className="w-screen" ref={containerRef}>
           <div className="Layout md:px-4 container mx-auto pt-4 bg-dark antialiased text-light w-screen h-full">

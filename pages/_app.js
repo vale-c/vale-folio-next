@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps, router }) {
   const url = `https://wallis.dev${router.route}`;
   return (
     <AnimateSharedLayout type="crossfade">
-      <AnimatePresence exitBeforeEnter initial={false}>
+      <AnimatePresence initial={false}>
         <ThemeProvider attribute="class">
           <Layout>
             <Component {...pageProps} key={url} />

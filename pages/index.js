@@ -7,26 +7,11 @@ import Work from './work';
 import Loader from '../components/Loader';
 import { useAnimation } from 'framer-motion';
 import Link from 'next/link';
-import Particles from 'react-particles';
-import { loadFull } from 'tsparticles';
-import { useCallback } from 'react';
-import particlesData from '../data/particlesData.json';
+import { ParticlesComponent } from '../components/ParticlesComponent';
 
 export const databaseId = process.env.NOTION_DATABASE_ID;
 
 export default function Home({ posts }) {
-  const particlesInit = useCallback(async (engine) => {
-    console.log(engine);
-    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
-    await loadFull(engine);
-  }, []);
-
-  const particlesLoaded = useCallback(async (container) => {
-    await console.log(container);
-  }, []);
-
   const visiblePosts = 4;
   const [isLoading, setIsLoading] = useState(true);
   const [showMore, setShowMore] = useState(visiblePosts);
@@ -51,12 +36,7 @@ export default function Home({ posts }) {
   }
   return (
     <Container>
-      <Particles
-        id="tsparticles"
-        init={particlesInit}
-        loaded={particlesLoaded}
-        options={particlesData}
-      />
+      <ParticlesComponent />
       <Hero image="/images/vale-wave.png" height="400" width="400" />
       <Work isWorkPage={false} />
       <Blog posts={posts?.slice(0, showMore)} />
@@ -70,10 +50,7 @@ export default function Home({ posts }) {
           </button>
         </div>
       )}
-      <footer
-        scroll={scroll}
-        className="font-lato text-center text-gray-700 dark:text-gray-50 pin-b p-6 text-md lg:text-lg"
-      >
+      <footer className="font-lato text-center text-gray-700 dark:text-gray-50 pin-b p-6 text-md lg:text-lg">
         © {new Date().getFullYear()}, Built with ☕️ & 💖 by{' '}
         <Link href="/about">
           <span className="font-bold hover:underline">Vale</span>

@@ -64,7 +64,6 @@ export const NavHeader = ({ navShow }) => {
         initial="hidden"
         animate="enter"
         exit="exit"
-        exitBeforeEnter
         className={
           isOpen
             ? 'fixed container pointer-events-none left-1/2 transfrom -translate-x-1/2 md:px-2 px-4 mx-auto text-light  z-20 top-0 transition duration-1000 ease-in-out antialiased w-full py-4 bg-dark'
