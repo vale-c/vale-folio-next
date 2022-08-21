@@ -8,7 +8,7 @@ import { Title } from '../components/elements/Titles';
 
 const Work = ({ isWorkPage = true }) => {
   return (
-    <div className="flex flex-col mb-12">
+    <div className="flex flex-col mb-12 px-8 sm:px-0">
       {isWorkPage && (
         <div className="py-16">
           <div className="fixed top-0 left-0 w-screen">
