@@ -113,7 +113,7 @@ const AboutPage = () => {
       </motion.section>
       <section
         data-scroll-section
-        className="font-roboto pb-12 flex items-center justify-center md:justify-end text-4xl font-lg tracking-widest leading-tight text-light uppercase antialiased"
+        className="font-roboto py-12 flex items-center justify-center md:justify-end text-4xl font-lg tracking-widest leading-tight text-light uppercase antialiased"
       >
         what drives me
       </section>

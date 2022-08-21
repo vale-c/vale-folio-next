@@ -5,7 +5,6 @@ export const Title = styled.h1`
   font-size: ${textSizes['4xl']};
   font-weight: 600;
   line-height: 56px;
-  margin-bottom: 24px;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   @media (max-width: ${screens.lg}px) {
     font-size: ${textSizes['2xl']};

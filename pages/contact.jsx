@@ -1,9 +1,13 @@
 import React from 'react';
+import { Hero } from '../components/Hero';
 
 const Contact = () => (
   <div className="flex flex-col items-center justify-center h-screen">
+    <div className="mb-8">
+      <Hero image="/images/vale-email.png" height="350" width="350" />
+    </div>
     <div
-      className="opacity-85 text-sm md:text-base"
+      className="px-24 opacity-85 text-sm md:text-base"
       style={{ textShadow: '0 2px 10px rgba(0, 0, 0, 0.3)' }}
     >
       <div
