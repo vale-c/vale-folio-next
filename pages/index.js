@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Blog from './blog';
 import { getDatabase } from '../lib/notion';
 import { Hero } from '../components/Hero';
+import Container from '../components/Container';
+import Work from './work';
 
 export const databaseId = process.env.NOTION_DATABASE_ID;
 
@@ -15,18 +17,21 @@ export default function Home({ posts }) {
 
   return (
     <>
-      <Hero />
-      <Blog posts={posts?.slice(0, showMore)} />
-      {visiblePosts < posts?.length && (
-        <div className="flex justify-center">
-          <button
-            className="bg-indigo-100 text-indigo-800 dark:bg-green-100 dark:text-green-800 font-semibold py-2 px-4 my-8 rounded"
-            onClick={handleLoadMore}
-          >
-            Load More
-          </button>
-        </div>
-      )}
+      <Container>
+        <Hero image="/images/vale-wave.png" height="400" width="400" />
+        <Work />
+        <Blog posts={posts?.slice(0, showMore)} />
+        {visiblePosts < posts?.length && (
+          <div className="flex justify-center">
+            <button
+              className="bg-indigo-100 text-indigo-800 dark:bg-green-100 dark:text-green-800 font-semibold py-2 px-4 my-8 rounded"
+              onClick={handleLoadMore}
+            >
+              Load More
+            </button>
+          </div>
+        )}
+      </Container>
     </>
   );
 }

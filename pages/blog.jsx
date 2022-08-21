@@ -2,6 +2,7 @@ import Container from '../components/Container';
 import { Fragment } from 'react';
 import { motion } from 'framer-motion';
 import { getDatabase } from '../lib/notion';
+
 export const databaseId = process.env.NOTION_DATABASE_ID;
 
 export function Blog({ posts }) {
@@ -37,7 +38,7 @@ export function Blog({ posts }) {
                       <div className="text-sm font-light mb-1 text-gray-400">
                         {dates}
                       </div>
-                      <div className="text-lg font-semibold mb-1 text-gray-800 dark:text-gray-50">
+                      <div className="text-lg font-semibold mb-1 text-gray-700 dark:text-gray-50">
                         {titles}
                       </div>
                       <div className="text-sm font-medium`">{descriptions}</div>

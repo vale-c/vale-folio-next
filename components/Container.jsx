@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import Head from 'next/head';
-import { Footer } from './Footer';
+import Link from 'next/link';
 
 export default function Container(props) {
   const { children, ...customMeta } = props;
@@ -14,7 +14,7 @@ export default function Container(props) {
   };
   return (
     <>
-      {/* <Head>
+      <Head>
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
         <meta name="viewport" content="width=device-width" />
@@ -40,8 +40,8 @@ export default function Container(props) {
         {meta.date && (
           <meta property="article:published_time" content={meta.date} />
         )}
-      </Head> */}
-      <main className="container mx-auto px-12">{children}</main>
+      </Head>
+      <main className="container mx-auto px-12 sm:px-0">{children}</main>
     </>
   );
 }
