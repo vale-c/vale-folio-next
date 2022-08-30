@@ -35,14 +35,14 @@ const Work = ({ isWorkPage = true }) => {
           <div className="py-16">
             <div className="fixed top-0 left-0 w-screen">
               <img
-                className="object-cover h-80 w-full opacity-30"
+                className="object-cover h-96 w-full opacity-30"
                 src="/images/coding-bg.jpg"
                 alt="bg-cover"
               />
             </div>
           </div>
         )}
-        <div className="py-8">
+        <div className="pb-8">
           <Title className="font-roboto mb-4 text-gray-800 dark:text-gray-50">
             Coding Projects
           </Title>
