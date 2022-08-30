@@ -1,40 +1,24 @@
 import React, { useRef } from 'react';
 import { NavHeader } from './NavHeader';
 import { Cursor } from './Cursor';
-import {
-  LocomotiveScrollProvider,
-  useLocomotiveScroll
-} from 'react-locomotive-scroll';
 import { AnimateSharedLayout } from 'framer-motion';
-import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 const Layout = (props) => {
   const containerRef = useRef(null);
-  const { pathname } = useRouter();
-  const { scroll } = useLocomotiveScroll();
-  const path = pathname.split('?')[0];
-
   return (
     <AnimateSharedLayout type="crossfade">
-      <LocomotiveScrollProvider
-        options={{
-          smooth: true
-        }}
-        watch={[path]}
-        location={path}
-        containerRef={containerRef}
-        onLocationChange={(scroll) =>
-          scroll.scrollTo(0, { duration: 0, disableLerp: true })
-        }
-      >
-        <div data-scroll-container className="w-screen" ref={containerRef}>
-          <div className="Layout md:px-4 container mx-auto pt-4 bg-dark antialiased text-light w-screen h-full">
-            <NavHeader />
-            {props.children}
-          </div>
-        </div>
-      </LocomotiveScrollProvider>
+      <div data-scroll-container className="w-screen" ref={containerRef}>
+        <NavHeader />
+        {props.children}
+      </div>
       <Cursor />
+      <footer className="font-lato text-center text-gray-700 dark:text-gray-50 pin-b p-6 text-md lg:text-lg">
+        © {new Date().getFullYear()}, Built with ☕️ & 💖 by{' '}
+        <Link href="/about">
+          <span className="font-bold hover:underline">Vale</span>
+        </Link>
+      </footer>
     </AnimateSharedLayout>
   );
 };

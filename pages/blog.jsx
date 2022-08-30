@@ -1,7 +1,7 @@
-import Container from '../components/Container';
 import { Fragment } from 'react';
 import { motion } from 'framer-motion';
 import { getDatabase } from '../lib/notion';
+import Container from '../components/Container';
 
 export const databaseId = process.env.NOTION_DATABASE_ID;
 
@@ -27,8 +27,11 @@ export function Blog({ posts }) {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <div className="shadow-lg rounded-b-lg mb-4 pb-6">
-                  <a href={`/${postUrl}`}>
+                <div className="shadow-lg rounded-b-lg mb-4 pb-6 bg-pink">
+                  <a
+                    href={`/${postUrl}`}
+                    style={{ position: 'relative', zIndex: 49 }}
+                  >
                     <img
                       alt="blog-post-cover"
                       className="h-60 w-full rounded-t-lg object-cover"

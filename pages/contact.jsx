@@ -3,7 +3,7 @@ import { Hero } from '../components/Hero';
 
 const Contact = () => (
   <div className="flex flex-col items-center justify-center h-screen py-8">
-    <div className="mb-10">
+    <div className="mb-8">
       <Hero image="/images/vale-email.png" height="350" width="350" />
     </div>
     <div

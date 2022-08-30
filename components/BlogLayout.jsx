@@ -13,7 +13,7 @@ export default function BlogLayout({ children, data }) {
       type="article"
       image={postImageUrl}
     >
-      <article className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
+      <article className="flex flex-col justify-center items-start max-w-2xl mx-auto w-full">
         {children}
       </article>
     </Container>

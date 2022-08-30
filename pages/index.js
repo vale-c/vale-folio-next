@@ -6,7 +6,6 @@ import Container from '../components/Container';
 import Work from './work';
 import Loader from '../components/Loader';
 import { useAnimation } from 'framer-motion';
-import Link from 'next/link';
 
 export const databaseId = process.env.NOTION_DATABASE_ID;
 
@@ -15,6 +14,7 @@ export default function Home({ posts }) {
   const [isLoading, setIsLoading] = useState(true);
   const [showMore, setShowMore] = useState(visiblePosts);
   const controls = useAnimation();
+
   useEffect(() => {
     if (!isLoading) {
       setTimeout(() => {
@@ -48,12 +48,6 @@ export default function Home({ posts }) {
           </button>
         </div>
       )}
-      <footer className="font-lato text-center text-gray-700 dark:text-gray-50 pin-b p-6 text-md lg:text-lg">
-        © {new Date().getFullYear()}, Built with ☕️ & 💖 by{' '}
-        <Link href="/about">
-          <span className="font-bold hover:underline">Vale</span>
-        </Link>
-      </footer>
     </Container>
   );
 }

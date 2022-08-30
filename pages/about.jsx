@@ -52,7 +52,7 @@ const AboutPage = () => {
         data-scroll-section
         className="w-full h-screen grid place-content-center"
       >
-        <div className="pb-8">
+        <div className="py-8">
           <Hero image="/images/vale-focus-mode.png" height="250" width="250" />
         </div>
         <div className="inline-flex flex-col items-center md:items-start space-y-6 px-8 text-lg">
@@ -113,7 +113,7 @@ const AboutPage = () => {
       </motion.section>
       <section
         data-scroll-section
-        className="font-roboto py-12 flex items-center justify-center md:justify-end text-4xl font-lg tracking-widest leading-tight text-light uppercase antialiased"
+        className="font-roboto pt-24 pb-12 pr-8 flex items-center justify-center md:justify-end text-4xl font-lg tracking-widest leading-tight text-light uppercase antialiased"
       >
         what drives me
       </section>
@@ -227,7 +227,7 @@ const AboutPage = () => {
         data-scroll-section
         className="flex flex-col items-center justify-evenly h-screen"
       >
-        <div className="font-roboto uppercase text-5xl sm:text-9xl font-bold text-center">
+        <div className="font-roboto uppercase text-7xl sm:text-9xl font-bold text-center">
           <span className="text-stroke">Lets</span>
           <Link href="/contact">
             <a className="fx-underline text-indigo-400 dark:text-green-400">

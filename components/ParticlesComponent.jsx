@@ -22,7 +22,8 @@ export const ParticlesComponent = () => {
         top: 0,
         left: 0,
         width: '100%',
-        height: '100%'
+        height: '100%',
+        zIndex: 0
       }}
     >
       <Particles
@@ -36,20 +37,35 @@ export const ParticlesComponent = () => {
                 enable: true
               }
             },
-            size: {
+            color: {
+              value: '#ccc'
+            },
+            opacity: {
               value: 1,
               random: true,
               anim: {
-                speed: 10,
-                size_min: 0.1
+                enable: true,
+                speed: 1,
+                opacity_min: 0,
+                sync: false
+              }
+            },
+            size: {
+              value: 3,
+              random: true,
+              anim: {
+                enable: false,
+                speed: 4,
+                size_min: 0.3,
+                sync: false
               }
             },
             line_linked: {
               enable: false,
               distance: 100,
-              color: '#ffffff',
-              opacity: 0.1,
-              width: 0.1
+              color: '#fff',
+              opacity: 0.4,
+              width: 1
             },
             move: {
               random: false,
@@ -74,7 +90,8 @@ export const ParticlesComponent = () => {
                 distance: 250,
                 duration: 2,
                 size: 0,
-                opacity: 0
+                opacity: 0,
+                speed: 3
               },
               repulse: {
                 distance: 400,

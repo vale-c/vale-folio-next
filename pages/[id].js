@@ -13,7 +13,7 @@ export default function Post({ page, blocks }) {
   return (
     <BlogLayout data={page} content={blocks}>
       <div className="flex flex-col">
-        <div className="fixed top-0 left-0 w-screen">
+        <div className="absolute top-0 left-0 w-screen">
           <img
             className="object-cover h-52 w-full opacity-70"
             src={

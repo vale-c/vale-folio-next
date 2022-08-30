@@ -1,6 +1,6 @@
 export const headerNavLinks = [
   {
-    title: 'About Me',
+    title: 'About',
     slug: '/about/'
   },
   {
