@@ -76,7 +76,7 @@ const Work = ({ isWorkPage = true }) => {
           </ProjectCard>
           <ProjectCard
             title="Momentum Dashboard"
-            link="http://new-momentum-dash.vercel.app/"
+            link="https://momentumdash.netlify.com/"
             background="linear-gradient(to right, #ffbe64 0%, #ffaa64 100%)"
           >
             <InnerCardText>

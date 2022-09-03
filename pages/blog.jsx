@@ -26,12 +26,10 @@ export function Blog({ posts }) {
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                className="shadow-lg rounded-b-lg"
               >
-                <div className="shadow-lg rounded-b-lg mb-4 pb-6 bg-pink">
-                  <a
-                    href={`/${postUrl}`}
-                    style={{ position: 'relative', zIndex: 49 }}
-                  >
+                <div className="mb-4 pb-6">
+                  <a href={`/${postUrl}`} className="relative">
                     <img
                       alt="blog-post-cover"
                       className="h-60 w-full rounded-t-lg object-cover"

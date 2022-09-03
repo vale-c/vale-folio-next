@@ -7,10 +7,9 @@ import { ToggleButton } from '../components/ToggleButton';
 import Link from 'next/link';
 import Head from 'next/head';
 
-import { useRouter } from 'next/router';
-
 export const NavHeader = () => {
   const [page] = useState('home');
+
   return (
     <>
       <Head>
@@ -52,18 +51,31 @@ export const NavHeader = () => {
           content="https://www.valentinacalabrese.com/thumbnail.png"
         />
       </Head>
-      <ul className="sm:flex pointer-events-auto items-center space-x-4 antialiased font-medium text-xs tracking-widest">
+      <ul className="sm:flex pointer-events-auto items-center antialiased font-medium text-xs tracking-widest">
         <header
           className="top-0 w-screen fixed flex flex-row justify-between items-center tracking-widest
           h-16 md:h-20 px-12
         bg-white dark:bg-gray-800 text-black dark:text-white z-50"
         >
+          <Link href="/">
+            <a className="flex items-center justify-center">
+              <span
+                alt="sparkle-emoji"
+                className="text-2xl lg:text-4xl font-bold mr-2 hover:animate-ping"
+              >
+                ✨
+              </span>
+              <h1 className="text-2xl lg:text-4xl font-bold mr-4 lg:mx-0 bg-clippath bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-indigo-500">
+                Vale
+              </h1>
+            </a>
+          </Link>
           <AnimateSharedLayout>
             <div className="flex align-center justify-center ml-auto">
               {headerNavLinks.map((link) => (
                 <li
                   key={link.title}
-                  className="text-gray-700 dark:text-gray-100 text-xl font-bold hover:underline underline-offset-4 px-4 py-2"
+                  className="text-gray-700 dark:text-gray-100 text-sm lg:text-xl font-bold hover:underline underline-offset-4 px-4 py-2"
                 >
                   <Link href={link.slug}>{link.title}</Link>
                 </li>
