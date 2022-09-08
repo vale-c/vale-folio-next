@@ -1,9 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
+
+const getRandomInt = (min, max) => {
+  let randInt = Math.floor(Math.random() * (max - min + 1)) + min;
+  return randInt;
+};
 
 export const Hero = ({ height, image, width }) => (
-  <div className="flex flex-col items-center justify-center pt-24">
+  <motion.div
+    initial={{ opacity: 0.6 }}
+    whileHover={{
+      rotate: getRandomInt(0, 2) < 1 ? -5 : 5,
+      scale: 1.2,
+      transition: { type: 'spring', duration: 0.3, bounce: 0.25 }
+    }}
+    whileTap={{ scale: 0.9 }}
+    whileInView={{ opacity: 1 }}
+    className="flex flex-col items-center justify-center pt-24"
+  >
     <Image
       alt="hero-image"
       src={image}
@@ -11,7 +27,7 @@ export const Hero = ({ height, image, width }) => (
       height={height}
       width={width}
     />
-  </div>
+  </motion.div>
 );
 
 Hero.propTypes = {
