@@ -11,7 +11,6 @@
     "@notionhq/client": "^0.4.4",
     "@react-three/drei": "^9.19.6",
     "@react-three/fiber": "^8.3.0",
-    "@svgr/webpack": "^6.3.1",
     "@tailwindcss/typography": "^0.5.4",
     "framer-motion": "^6.5.1",
     "locomotive-scroll": "^4.1.4",

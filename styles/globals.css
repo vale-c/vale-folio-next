@@ -50,8 +50,7 @@ body {
   z-index: 9999;
   mix-blend-mode: difference;
   transition: 150ms ease;
-  transition-property: border, opacity, background-color, transform,
-    mix-blend-mode;
+  transition-property: border, opacity, background-color, transform, mix-blend-mode;
 }
 
 .cursor--hidden {
@@ -81,7 +80,7 @@ section {
 .text-stroke {
   -webkit-text-stroke: 2px #cdcbcb;
   -webkit-text-fill-color: transparent;
-} */
+}
 .text-stroke-sm {
   -webkit-text-stroke: 1px #cdcbcb;
   -webkit-text-fill-color: transparent;
