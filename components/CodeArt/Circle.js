@@ -46,6 +46,7 @@ class Circle extends React.Component {
       bg = p.loadImage('/images/vaporwave.png')
       canvas = p.createCanvas(637, 835)
       canvas.mouseClicked(p.handleClick)
+      canvas.style("z-index: 1")
 
       amp = new p5.Amplitude()
     }
