@@ -4,30 +4,32 @@ import { motion, useAnimation, AnimatePresence } from 'framer-motion';
 import Loader from '../components/Loader';
 import { Hero } from '../components/Hero';
 
+export const variants = {
+  hidden: { opacity: 0 },
+  enter: {
+    opacity: 1,
+    x: 0,
+    y: 0,
+    transition: {
+      staggerChildren: 0.5,
+      ease: 'easeInOut',
+      duration: 1
+    }
+  },
+  exit: {
+    opacity: 0,
+    x: 0,
+    y: -100,
+    transition: {
+      staggerChildren: 0.5
+    }
+  }
+};
+
 const AboutPage = () => {
   const [isLoading, setIsLoading] = useState(true);
   const controls = useAnimation();
-  const variants = {
-    hidden: { opacity: 0 },
-    enter: {
-      opacity: 1,
-      x: 0,
-      y: 0,
-      transition: {
-        staggerChildren: 0.5,
-        ease: 'easeInOut',
-        duration: 1
-      }
-    },
-    exit: {
-      opacity: 0,
-      x: 0,
-      y: -100,
-      transition: {
-        staggerChildren: 0.5
-      }
-    }
-  };
+
   useEffect(() => {
     if (!isLoading) {
       setTimeout(() => {
