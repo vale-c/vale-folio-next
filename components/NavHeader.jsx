@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AnimateSharedLayout, motion } from 'framer-motion';
+import { LayoutGroup } from 'framer-motion';
 
 import { headerNavLinks } from '../data/headerNavLinks';
 import { ToggleButton } from '../components/ToggleButton';
@@ -70,7 +70,7 @@ export const NavHeader = () => {
               </h1>
             </a>
           </Link>
-          <AnimateSharedLayout>
+          <LayoutGroup>
             <div className="flex align-center justify-center ml-auto">
               {headerNavLinks.map((link) => (
                 <li
@@ -84,7 +84,7 @@ export const NavHeader = () => {
             <div className="ml-4 sm:block">
               <ToggleButton />
             </div>
-          </AnimateSharedLayout>
+          </LayoutGroup>
         </header>
       </ul>
     </>

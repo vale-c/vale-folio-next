@@ -11,10 +11,10 @@ export const headerNavLinks = [
     title: 'Work',
     slug: '/work/'
   },
-  // {
-  //   title: 'Creative',
-  //   slug: '/creative/'
-  // },
+  {
+    title: 'Creative',
+    slug: '/creative/'
+  },
   {
     title: 'Contact',
     slug: '/contact/'

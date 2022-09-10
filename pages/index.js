@@ -35,7 +35,7 @@ export default function Home({ posts }) {
   }
   return (
     <Container>
-      <Hero image="/images/vale-wave.png" height="400" width="400" />
+      <Hero image="/images/vale-wave.png" height="400" width="400"  />
       <Work isWorkPage={false} />
       <Blog posts={posts?.slice(0, showMore)} />
       {visiblePosts < posts?.length && (

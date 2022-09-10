@@ -1,13 +1,13 @@
 import React, { useRef } from 'react';
 import { NavHeader } from './NavHeader';
 import { Cursor } from './Cursor';
-import { AnimateSharedLayout } from 'framer-motion';
+import { LayoutGroup } from 'framer-motion';
 import Link from 'next/link';
 
 const Layout = (props) => {
   const containerRef = useRef(null);
   return (
-    <AnimateSharedLayout type="crossfade">
+    <LayoutGroup type="crossfade">
       <div data-scroll-container className="w-screen" ref={containerRef}>
         <NavHeader />
         {props.children}
@@ -19,7 +19,7 @@ const Layout = (props) => {
           <span className="font-bold hover:underline">Vale</span>
         </Link>
       </footer>
-    </AnimateSharedLayout>
+    </LayoutGroup>
   );
 };
 

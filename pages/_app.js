@@ -3,12 +3,12 @@ import { ThemeProvider } from 'next-themes';
 import '../styles/globals.css';
 import Layout from '../components/Layout';
 import { ParticlesComponent } from '../components/ParticlesComponent';
-import { AnimatePresence, AnimateSharedLayout } from 'framer-motion';
+import { AnimatePresence, LayoutGroup } from 'framer-motion';
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <AnimateSharedLayout type="crossfade">
+      <LayoutGroup type="crossfade">
         <AnimatePresence initial={false}>
           <ThemeProvider attribute="class">
             <Layout>
@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
             </Layout>
           </ThemeProvider>
         </AnimatePresence>
-      </AnimateSharedLayout>
+      </LayoutGroup>
     </>
   );
 }

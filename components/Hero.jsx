@@ -26,6 +26,8 @@ export const Hero = ({ height, image, width }) => (
       layout="fixed"
       height={height}
       width={width}
+      priority
+      quality={70}
     />
   </motion.div>
 );
