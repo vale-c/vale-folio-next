@@ -42,7 +42,7 @@ const AboutPage = () => {
   }, [isLoading, controls]);
 
   return (
-    <>
+    <div className='relative'>
       <AnimatePresence initial={false}>
         {isLoading ? <Loader /> : null}
       </AnimatePresence>
@@ -73,9 +73,9 @@ const AboutPage = () => {
               Creative Engineer
             </div>
           </div>
-          <p className="mb-3 font-lato max-w-3xl text-center md:text-left">
+          <p className="mb-3 font-telex max-w-3xl text-center md:text-left">
             My name is Valentina and I am a Software Engineer with a knack for
-            Design Systems & a special interest in{' '}
+            Design Systems & an interest in{' '}
             <a
               className="font-bold hover:underline"
               href="https://www.interaction-design.org/literature/topics/user-centered-design#:~:text=User%2Dcentered%20design%20(UCD),and%20accessible%20products%20for%20them."
@@ -91,11 +91,12 @@ const AboutPage = () => {
               a11y
             </a>{' '}
             best-practices.
-            <br /> I really enjoy thinking about <i>Usability</i>, and love to
+            <br /> I truly enjoy thinking about <i>Usability</i>, and love to
             make great Designs come to life through <code>code</code>.
           </p>
-          <p className="mb-3 font-lato max-w-3xl text-center md:text-left">
-            I am currently pursuing a MSc in Computer Science at Georgia Tech (
+          <p className="mb-3 font-telex max-w-3xl text-center md:text-left">
+            I have a BSc in Computer Science from the <a className="text-indigo-400 dark:text-green-400 font-bold hover:underline" href="https://corsi.unipr.it/en/cdl-info" target="_blank"
+              rel="noopener noreferrer">University of Parma</a> and I am also currently pursuing a MSc in Computer Science at Georgia Tech (
             <a
               className="text-indigo-400 dark:text-green-400 font-bold hover:underline"
               href="https://omscs.gatech.edu/"
@@ -106,10 +107,9 @@ const AboutPage = () => {
             </a>{' '}
             program) with a specialization in Interactive Intelligence.
           </p>
-          <p className="font-lato max-w-3xl text-center md:text-left">
+          <p className="font-telex max-w-3xl text-center md:text-left">
             In my spare time I enjoy playing the drums 🥁 and the guitar 🎸,
-            reading books 📚 about personal finance & self-improvement, and
-            expanding my knowledge about cryptocurrencies 🤑.{' '}
+            reading books 📚 about personal finance & self-improvement ✨, and playing tennis 🎾.{' '}
           </p>
         </div>
       </motion.section>
@@ -150,7 +150,7 @@ const AboutPage = () => {
               draggable={false}
             />
           </div>
-          <div className="mt-4 font-lato w-64 text-sm">
+          <div className="mt-4 font-telex w-64 text-sm">
             The inextinguishable spark ✨ igniting my thirst for knowledge and
             the desire to <i>always</i> keep improving are some of my strongest
             motivation catalysts.
@@ -183,7 +183,7 @@ const AboutPage = () => {
               draggable={false}
             />
           </div>
-          <div className="mt-4 font-lato w-64 text-sm">
+          <div className="mt-4 font-telex w-64 text-sm">
             <b>Creating</b> things instead of merely being a passive consumer is
             one of my most powerful mantras 💥, and something I always remind
             myself about to foster my intrinsic motivation.
@@ -216,12 +216,9 @@ const AboutPage = () => {
               draggable={false}
             />
           </div>
-          <div className="mt-4 font-lato w-64 text-sm">
+          <div className="mt-4 font-telex w-64 text-sm">
             Connecting with other people in the dev community to collectively
             share knowledge is one of the things that inspire me the most 🤓.
-            {/* There are so many great devs out there who have helped me grow and learn from the very
-            beginning of my coding journey, and I want to be able to do the same
-            and inspire other aspiring devs too. */}
           </div>
         </div>
       </section>
@@ -237,11 +234,8 @@ const AboutPage = () => {
             </a>
           </Link>
         </div>
-        {/* <div className="md:p-12 md:w-1/2  transform md:scale-150">
-          <SocialTray />
-        </div> */}
       </section>
-    </>
+    </div>
   );
 };
 

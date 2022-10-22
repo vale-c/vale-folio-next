@@ -2,16 +2,16 @@ import React from 'react';
 import { Hero } from '../components/Hero';
 
 const Contact = () => (
-  <div className="flex flex-col items-center justify-center h-screen py-8">
+  <div className="flex flex-col items-center justify-center h-screen py-8 overflow-hidden">
     <div className="mb-8">
-      <Hero image="/images/vale-email.png" height="350" width="350" />
+      <Hero image="/images/vale-email.png" height="300" width="300" />
     </div>
     <div
       className="px-24 opacity-85 text-sm md:text-base"
       style={{ textShadow: '0 2px 10px rgba(0, 0, 0, 0.3)' }}
     >
       <div
-        className="text-gray text-4xl lg:text-4xl mb-8 tracking-wide relative"
+        className="text-gray text-3xl lg:text-4xl my-8 tracking-wide relative"
         style={{ textShadow: '0 2px 10px rgba(0, 0, 0, 0.2)' }}
       >
         <a
@@ -33,7 +33,7 @@ const Contact = () => (
           <span className="wave-emoji text-2xl">👋🏻</span> or follow me on:{' '}
         </div>
         <a
-          className="font-lato font-bold hover:underline"
+          className="font-telex font-bold hover:underline"
           href="https://dribbble.com/blueberrymuffin95"
           target="_blank"
         >
@@ -41,7 +41,7 @@ const Contact = () => (
         </a>{' '}
         🎨 ,{' '}
         <a
-          className="font-lato font-bold hover:underline"
+          className="font-telex font-bold hover:underline"
           href="https://www.instagram.com/frontendvale/"
           target="_blank"
         >
@@ -49,7 +49,7 @@ const Contact = () => (
         </a>{' '}
         📸 ,{' '}
         <a
-          className="font-lato font-bold hover:underline"
+          className="font-telex font-bold hover:underline"
           href="https://www.github.com/vale-c/"
           target="_blank"
         >
@@ -57,7 +57,7 @@ const Contact = () => (
         </a>{' '}
         💻 or{' '}
         <a
-          className="font-lato font-bold hover:underline"
+          className="font-telex font-bold hover:underline"
           href="https://www.twitter.com/CherriePie4897/"
           target="_blank"
         >

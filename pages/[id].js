@@ -39,7 +39,7 @@ export default function Post({ page, blocks }) {
           {tags.map((tag, id) => {
             return (
               <span
-                className="mr-4 ml-1 px-3 py-1.5 outline outline-2 outline-offset-1 outline-indigo-300 dark:outline-green-300 truncate text-xs font-light font-roboto rounded max-h-8"
+                className="mr-4 ml-1 px-3 py-1.5 outline outline-2 outline-offset-1 outline-indigo-300 dark:outline-green-300 truncate text-xs font-light font-telex rounded max-h-8"
                 key={id}
               >
                 {tag.name}
