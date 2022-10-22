@@ -103,9 +103,15 @@ const AboutPage = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              OMSCS
-            </a>{' '}
-            program) with a specialization in Interactive Intelligence.
+              OMSCS{' '}
+            </a>
+            program) with a specialization in {' '}
+              <a 
+                className="text-indigo-400 dark:text-green-400 font-bold hover:underline"
+                href="https://omscs.gatech.edu/specialization-interactive-intelligence"  
+                target="_blank"
+                rel="noopener noreferrer">Interactive Intelligence
+              </a>.
           </p>
           <p className="font-telex max-w-3xl text-center md:text-left">
             In my spare time I enjoy playing the drums 🥁 and the guitar 🎸,
