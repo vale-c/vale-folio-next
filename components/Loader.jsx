@@ -24,7 +24,7 @@ const Loader = () => {
           />
         </motion.svg>
       </motion.div>
-      <div className="my-5 font-lato font-bold text-2xl text-gray-300 dark:text-gray-600 tracking-widest">
+      <div className="my-5 font-telex font-bold text-2xl text-gray-300 dark:text-gray-600 tracking-widest">
         Loading cool stuff...
       </div>
       <span className="text-2xl animate-ping">👾</span>

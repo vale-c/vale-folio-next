@@ -80,7 +80,7 @@ const SpanText = ({ text, id }) => {
 
 const Text = ({ text, id }) => {
   return (
-    <p className="font-roboto font-light mb-4 text-black dark:text-gray-200">
+    <p className="font-telex font-light mb-4 text-black dark:text-gray-200">
       <SpanText text={text} id={id} />
     </p>
   );
