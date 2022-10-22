@@ -37,7 +37,7 @@ export const ParticlesComponent = () => {
               }
             },
             color: {
-              value: '#ccc'
+              value: '#C0C0C0'
             },
             opacity: {
               value: 1,
