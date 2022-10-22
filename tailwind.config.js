@@ -11,7 +11,7 @@ module.exports = {
     extend: {
       fontFamily: {
         roboto: ['Roboto Slab', ...defaultTheme.fontFamily.serif],
-        lato: ['Lato', ...defaultTheme.fontFamily.sans]
+        telex: ['Telex', ...defaultTheme.fontFamily.sans]
       },
       typography: (theme) => ({
         dark: {
