@@ -26,18 +26,35 @@ export const ParticlesComponent = () => {
       }}
     >
       <Particles
+        id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
-        params={{
+        options={{
           particles: {
             number: {
-              value: 200,
+              value: 160,
               density: {
-                enable: true
+                enable: true,
+                value_area: 800
               }
             },
             color: {
-              value: '#C0C0C0'
+              value: "#d9d9d9"
+            },
+            shape: {
+              type: "circle",
+              stroke: {
+                width: 0,
+                color: "#000000"
+              },
+              polygon: {
+                nb_sides: 5
+              },
+              image: {
+                src: "img/github.svg",
+                width: 100,
+                height: 100
+              }
             },
             opacity: {
               value: 1,
@@ -61,43 +78,66 @@ export const ParticlesComponent = () => {
             },
             line_linked: {
               enable: false,
-              distance: 100,
-              color: '#fff',
+              distance: 150,
+              color: "#ffffff",
               opacity: 0.4,
               width: 1
             },
             move: {
-              random: false,
+              enable: true,
               speed: 1,
-              direction: 'none',
-              out_mode: 'out'
+              direction: "none",
+              random: true,
+              straight: false,
+              out_mode: "out",
+              bounce: false,
+              attract: {
+                enable: false,
+                rotateX: 600,
+                rotateY: 600
+              }
             }
           },
           interactivity: {
+            detect_on: "canvas",
             events: {
               onhover: {
                 enable: true,
-                mode: 'connect'
+                mode: "bubble"
               },
               onclick: {
-                enable: false,
-                mode: 'push'
-              }
+                enable: true,
+                mode: "repulse"
+              },
+              resize: true
             },
             modes: {
+              grab: {
+                distance: 400,
+                line_linked: {
+                  opacity: 1
+                }
+              },
               bubble: {
                 distance: 250,
-                duration: 2,
                 size: 0,
+                duration: 2,
                 opacity: 0,
                 speed: 3
               },
               repulse: {
                 distance: 400,
-                duration: 4
+                duration: 0.4
+              },
+              push: {
+                particles_nb: 4
+              },
+              remove: {
+                particles_nb: 2
               }
             }
-          }
+          },
+          retina_detect: true
         }}
       />
     </div>
