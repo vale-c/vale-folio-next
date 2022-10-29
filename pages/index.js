@@ -27,10 +27,10 @@ export default function Home({ posts }) {
         </h1>
         <p className="font-telex mt-4 text-xl text-center text-gray-600 dark:text-gray-400">
           A <span className="hover:animate-ping">creative</span> Software
-          Engineer who loves transforming
+          Engineer 👩🏻‍💻 who loves transforming
           <br />
           <span className="hover:animate-pulse">ideas 💡</span> into great{' '}
-          <span className="hover:animate-pulse">products</span>&nbsp;🚀
+          <span className="hover:animate-pulse">products 🚀</span>
         </p>
       </div>
       <Work isWorkPage={false} />
