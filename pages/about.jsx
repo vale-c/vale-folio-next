@@ -1,7 +1,5 @@
+import React from 'react';
 import Link from 'next/link';
-import React, { useState, useEffect } from 'react';
-import { motion, useAnimation, AnimatePresence } from 'framer-motion';
-import Loader from '../components/Loader';
 import { Hero } from '../components/Hero';
 
 export const variants = {
@@ -27,33 +25,9 @@ export const variants = {
 };
 
 const AboutPage = () => {
-  const [isLoading, setIsLoading] = useState(true);
-  const controls = useAnimation();
-
-  useEffect(() => {
-    if (!isLoading) {
-      setTimeout(() => {
-        controls.start('enter');
-      }, 1000);
-    } else {
-      controls.start('hidden');
-      setTimeout(() => setIsLoading(false), 2000);
-    }
-  }, [isLoading, controls]);
-
   return (
     <div className="relative">
-      <AnimatePresence initial={false}>
-        {isLoading ? <Loader /> : null}
-      </AnimatePresence>
-      <motion.section
-        variants={variants}
-        initial="hidden"
-        animate={controls}
-        exit="exit"
-        data-scroll-section
-        className="w-full h-screen grid place-content-center mt-12"
-      >
+      <div className="w-full h-screen grid place-content-center mt-12">
         <div className="py-8">
           <Hero image="/images/vale-focus-mode.png" height="250" width="250" />
         </div>
@@ -131,7 +105,7 @@ const AboutPage = () => {
             playing tennis 🎾.{' '}
           </p>
         </div>
-      </motion.section>
+      </div>
       <section
         data-scroll-section
         className="font-roboto pt-32 pb-12 pr-8 flex items-center justify-center md:justify-end text-4xl font-lg tracking-widest leading-tight text-light uppercase antialiased"

@@ -23,7 +23,7 @@ export const InnerCardText = styled.p`
 
 export const ProjectCard = ({ title, link, children, background }) => (
   <a
-    className="w-full shadow-lg relative no-underline rounded-lg px-8 py-8 md:py-24 hover:translate-y-5"
+    className="w-full shadow-lg relative no-underline rounded-lg p-8 md:py-24 hover:translate-y-5"
     href={link}
     target="_blank"
     rel="noopener noreferrer"

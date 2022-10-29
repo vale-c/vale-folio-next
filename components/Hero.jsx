@@ -13,7 +13,7 @@ export const Hero = ({ height, image, width }) => (
     initial={{ opacity: 0.6 }}
     whileHover={{
       rotate: getRandomInt(0, 2) < 1 ? -5 : 5,
-      scale: 1.2,
+      scale: 1.1,
       transition: { type: 'spring', duration: 0.3, bounce: 0.25 }
     }}
     whileTap={{ scale: 0.9 }}

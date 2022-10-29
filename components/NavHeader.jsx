@@ -13,7 +13,6 @@ import { hidden } from '../styles/utils';
 export const NavHeader = () => {
   const [page] = useState('home');
   const [open, setOpen] = useState(false);
-
   return (
     <>
       <Head>

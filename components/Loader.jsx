@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const Loader = () => {
+export const Loader = () => {
   return (
     <div className="fixed bg-dark grid place-content-center w-full h-screen top-0 left-0 text-center">
       <motion.div style={{ zIndex: 100 }} className="flex justify-center">
@@ -31,5 +31,3 @@ const Loader = () => {
     </div>
   );
 };
-
-export default Loader;

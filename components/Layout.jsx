@@ -2,10 +2,14 @@ import React, { useRef } from 'react';
 import { NavHeader } from './NavHeader';
 import { Cursor } from './Cursor';
 import { LayoutGroup } from 'framer-motion';
-import Link from 'next/link';
+import { Footer } from './Footer';
+import { Loader } from './Loader';
 
-const Layout = (props) => {
+const Layout = ({ isLoading, ...props }) => {
   const containerRef = useRef(null);
+  if (isLoading) {
+    return <Loader />;
+  }
   return (
     <LayoutGroup type="crossfade">
       <div data-scroll-container className="w-screen" ref={containerRef}>
@@ -13,12 +17,7 @@ const Layout = (props) => {
         {props.children}
       </div>
       <Cursor />
-      <footer className="font-telex text-center text-gray-700 dark:text-gray-50 pin-b p-6 text-md lg:text-lg">
-        © {new Date().getFullYear()}, Built with ☕️ & 💖 by{' '}
-        <Link href="/about">
-          <span className="font-bold hover:underline">Vale</span>
-        </Link>
-      </footer>
+      <Footer />
     </LayoutGroup>
   );
 };
