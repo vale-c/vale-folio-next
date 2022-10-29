@@ -71,9 +71,6 @@ export const NavHeader = () => {
               >
                 ✨
               </span>
-              <h1 className="text-2xl lg:text-4xl font-bold mr-4 lg:mx-0 bg-clippath bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-indigo-500">
-                Vale
-              </h1>
             </a>
           </Link>
           <LayoutGroup>
