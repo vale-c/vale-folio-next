@@ -1,5 +1,9 @@
 export const headerNavLinks = [
   {
+    title: 'Home',
+    slug: '/'
+  },
+  {
     title: 'About',
     slug: '/about/'
   },

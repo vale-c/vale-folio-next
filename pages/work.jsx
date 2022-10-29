@@ -29,7 +29,7 @@ const Title = styled.h1`
 
 const Work = ({ isWorkPage = true }) => {
   return (
-    <div className="relative">
+    <>
       <Container>
         <div className="flex flex-col my-12 py-8 sm:py-0">
           {isWorkPage && (
@@ -43,7 +43,7 @@ const Work = ({ isWorkPage = true }) => {
               </div>
             </div>
           )}
-          <div className="mb-8">
+          <div className="relative mb-8">
             <Title className="font-roboto mb-4 text-gray-800 dark:text-gray-50">
               Coding Projects
             </Title>
@@ -157,7 +157,7 @@ const Work = ({ isWorkPage = true }) => {
           </div>
         </div>
       </Container>
-    </div>
+    </>
   );
 };
 

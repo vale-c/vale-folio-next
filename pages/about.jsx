@@ -42,7 +42,7 @@ const AboutPage = () => {
   }, [isLoading, controls]);
 
   return (
-    <div className='relative'>
+    <div className="relative">
       <AnimatePresence initial={false}>
         {isLoading ? <Loader /> : null}
       </AnimatePresence>
@@ -52,7 +52,7 @@ const AboutPage = () => {
         animate={controls}
         exit="exit"
         data-scroll-section
-        className="w-full h-screen grid place-content-center"
+        className="w-full h-screen grid place-content-center mt-12"
       >
         <div className="py-8">
           <Hero image="/images/vale-focus-mode.png" height="250" width="250" />
@@ -95,8 +95,17 @@ const AboutPage = () => {
             make great Designs come to life through <code>code</code>.
           </p>
           <p className="mb-3 font-telex max-w-3xl text-center md:text-left">
-            I have a BSc in Computer Science from the <a className="text-indigo-400 dark:text-green-400 font-bold hover:underline" href="https://corsi.unipr.it/en/cdl-info" target="_blank"
-              rel="noopener noreferrer">University of Parma</a> and I am also currently pursuing a MSc in Computer Science at Georgia Tech (
+            I have a BSc in Computer Science from the{' '}
+            <a
+              className="text-indigo-400 dark:text-green-400 font-bold hover:underline"
+              href="https://corsi.unipr.it/en/cdl-info"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              University of Parma
+            </a>{' '}
+            and I am also currently pursuing a MSc in Computer Science at
+            Georgia Tech (
             <a
               className="text-indigo-400 dark:text-green-400 font-bold hover:underline"
               href="https://omscs.gatech.edu/"
@@ -105,23 +114,27 @@ const AboutPage = () => {
             >
               OMSCS{' '}
             </a>
-            program) with a specialization in {' '}
-              <a 
-                className="text-indigo-400 dark:text-green-400 font-bold hover:underline"
-                href="https://omscs.gatech.edu/specialization-interactive-intelligence"  
-                target="_blank"
-                rel="noopener noreferrer">Interactive Intelligence
-              </a>.
+            program) with a specialization in{' '}
+            <a
+              className="text-indigo-400 dark:text-green-400 font-bold hover:underline"
+              href="https://omscs.gatech.edu/specialization-interactive-intelligence"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Interactive Intelligence
+            </a>
+            .
           </p>
           <p className="font-telex max-w-3xl text-center md:text-left">
             In my spare time I enjoy playing the drums 🥁 and the guitar 🎸,
-            reading books 📚 about personal finance & self-improvement ✨, and playing tennis 🎾.{' '}
+            reading books 📚 about personal finance & self-improvement ✨, and
+            playing tennis 🎾.{' '}
           </p>
         </div>
       </motion.section>
       <section
         data-scroll-section
-        className="font-roboto pt-24 pb-12 pr-8 flex items-center justify-center md:justify-end text-4xl font-lg tracking-widest leading-tight text-light uppercase antialiased"
+        className="font-roboto pt-32 pb-12 pr-8 flex items-center justify-center md:justify-end text-4xl font-lg tracking-widest leading-tight text-light uppercase antialiased"
       >
         what drives me
       </section>

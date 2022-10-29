@@ -2,7 +2,7 @@ import React from 'react';
 import { Hero } from '../components/Hero';
 
 const Contact = () => (
-  <div className="flex flex-col items-center justify-center h-screen py-8 overflow-hidden">
+  <div className="flex flex-col items-center justify-center h-screen overflow-hidden">
     <div className="mb-8">
       <Hero image="/images/vale-email.png" height="300" width="300" />
     </div>
@@ -11,7 +11,7 @@ const Contact = () => (
       style={{ textShadow: '0 2px 10px rgba(0, 0, 0, 0.3)' }}
     >
       <div
-        className="text-gray text-3xl lg:text-4xl my-8 tracking-wide relative"
+        className="text-gray text-3xl lg:text-4xl tracking-wide relative"
         style={{ textShadow: '0 2px 10px rgba(0, 0, 0, 0.2)' }}
       >
         <a
@@ -24,11 +24,11 @@ const Contact = () => (
           Get in touch 💌
         </a>
       </div>
-      <div className="text-xl md:text-2xl lg:text-3xl relative inline-block">
-        <span className="italic">
+      <div className="text-xl md:text-xl lg:text-2xl relative inline-block">
+        <span className="font-light text-sm italic">
           Dont'be a <strike>stranger</strike>.
         </span>
-        <div className="my-4">
+        <div className="my-2">
           Say <a href="mailto:frontendvale@gmail.com">Hi</a>{' '}
           <span className="wave-emoji text-2xl">👋🏻</span> or follow me on:{' '}
         </div>
