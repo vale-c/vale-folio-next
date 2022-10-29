@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import { NavHeader } from './NavHeader';
 import { Cursor } from './Cursor';
-import { LayoutGroup } from 'framer-motion';
 import { Footer } from './Footer';
 import { Loader } from './Loader';
 import { motion } from 'framer-motion';
@@ -18,22 +17,20 @@ const Layout = ({ isLoading, ...props }) => {
     return <Loader />;
   }
   return (
-    <LayoutGroup type="crossfade">
-      <motion.main
-        initial="hidden"
-        animate="enter"
-        exit="exit"
-        variants={variants}
-        transition={{ type: 'linear' }}
-      >
-        <div data-scroll-container className="w-screen" ref={containerRef}>
-          <NavHeader />
-          {props.children}
-        </div>
-        <Cursor />
-        <Footer />
-      </motion.main>
-    </LayoutGroup>
+    <motion.main
+      initial="hidden"
+      animate="enter"
+      exit="exit"
+      variants={variants}
+      transition={{ type: 'linear' }}
+    >
+      <div data-scroll-container className="w-screen" ref={containerRef}>
+        <NavHeader />
+        {props.children}
+      </div>
+      <Cursor />
+      <Footer />
+    </motion.main>
   );
 };
 
