@@ -19,16 +19,18 @@ export default function Home({ posts }) {
     <Container>
       <Hero image="/images/vale-wave.png" height="250" width="250" />
       <div className="flex flex-col items-center justify-center w-full max-w-2xl px-4 mx-auto mt-8 mb-16 md:px-0">
-        <h1 className="text-3xl font-bold leading-tight text-center text-gray-900 dark:text-gray-100 md:text-5xl">
-          I'm <span className="text-indigo-400 dark:text-green-400">Vale</span>
+        <h1 className="font-roboto tracking-wide text-3xl font-bold leading-tight text-center text-gray-900 dark:text-gray-100 md:text-5xl ">
+          I'm{' '}
+          <span className="bg-clippath bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-indigo-500 hover:animate-bounce">
+            Vale
+          </span>
         </h1>
-        <p className="mt-4 text-xl text-center text-gray-600 dark:text-gray-400">
+        <p className="font-telex mt-4 text-xl text-center text-gray-600 dark:text-gray-400">
           A <span className="hover:animate-bounce">creative</span> Software
           Engineer who loves transforming
           <br />
-          <span className="hover:animate-bounce">ideas 💡</span>
-          into
-          <span className="hover:animate-pulse"> great products 🚀</span>
+          <span className="hover:animate-bounce">ideas 💡</span> into{' '}
+          <span className="hover:animate-pulse">great products</span>&nbsp;🚀
         </p>
       </div>
       <Work isWorkPage={false} />
