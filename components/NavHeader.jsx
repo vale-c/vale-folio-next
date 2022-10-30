@@ -6,54 +6,13 @@ import { Burger } from './Burger';
 import { ToggleButton } from '../components/ToggleButton';
 
 import Link from 'next/link';
-import Head from 'next/head';
 
 import { hidden } from '../styles/utils';
 
 export const NavHeader = () => {
-  const [page] = useState('home');
   const [open, setOpen] = useState(false);
   return (
     <>
-      <Head>
-        <title>{page.toUpperCase() + ' | Vale Portfolio'}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" href="/favicon.svg" />
-        <meta name="title" content="Vale - Portfolio" />
-        <meta
-          name="description"
-          content="Valentina Calabrese, a Creative Software Engineer based in Italy. Discover more about me and my work here!"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.valentinacalabrese.com/" />
-        <meta property="og:title" content="Vale - Portfolio" />
-        <meta property="og:site_name" content="Vale" />
-        <meta
-          property="og:description"
-          content="Valentina Calabrese, a Creative Software Engineer based in Italy. Discover more about me and my work here!"
-        />
-        <meta property="og:image" content="/thumbnail.png" />
-        <meta
-          name="keywords"
-          content="PortFolio, about me, about vale,valentina,  valentinacalabrese.com, valentina calabrese"
-        />
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta
-          property="twitter:url"
-          content="https://www.valentinacalabrese.com/"
-        />
-        <meta name="twitter:site" content="CherriePie4897" />
-        <meta name="twitter:creator" content="CherriePie4897" />
-        <meta property="twitter:title" content="Vale's - Portfolio" />
-        <meta
-          property="twitter:description"
-          content="Valentina Calabrese, a Creative Software Engineer based in Italy. Discover more about me and my work here!"
-        />
-        <meta
-          property="twitter:image"
-          content="https://www.valentinacalabrese.com/thumbnail.png"
-        />
-      </Head>
       <ul
         hidden={hidden}
         className="sm:flex pointer-events-auto items-center antialiased font-medium text-xs tracking-widest z-10"
