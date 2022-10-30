@@ -63,15 +63,13 @@ export const NavHeader = () => {
           h-16 md:h-20 px-12
         bg-white dark:bg-gray-800 text-black dark:text-white z-50"
         >
-          <Link href="/">
-            <a className="flex items-center justify-center">
-              <span
-                alt="sparkle-emoji"
-                className="text-2xl lg:text-4xl font-bold mr-2 hover:animate-ping"
-              >
-                ✨
-              </span>
-            </a>
+          <Link className="flex items-center justify-center" href="/">
+            <span
+              alt="sparkle-emoji"
+              className="text-2xl lg:text-4xl font-bold mr-2 hover:animate-ping"
+            >
+              ✨
+            </span>
           </Link>
           <LayoutGroup>
             <div className="flex align-center justify-center ml-auto">
@@ -93,7 +91,7 @@ export const NavHeader = () => {
         </header>
       </ul>
       <div className="sm:hidden relative z-10">
-        <div className="flex flex-col items-center justify-center ml-2 text-center">
+        <div className="flex flex-col items-center justify-center mt-4 ml-2 text-center">
           <Burger open={open} setOpen={setOpen} />
           {open && (
             <motion.div

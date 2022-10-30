@@ -8,6 +8,7 @@ export const Cursor = () => {
   const [clicked, setClicked] = useState(false);
   const [linkHovered, setLinkHovered] = useState(false);
   const router = useRouter();
+
   useEffect(() => {
     addEventListeners();
     handleLinkHoverEvents();
@@ -20,6 +21,7 @@ export const Cursor = () => {
       el.addEventListener('mouseout', () => setLinkHovered(false));
     });
   };
+
   const addEventListeners = () => {
     document.addEventListener('mousemove', onMouseMove);
     document.addEventListener('mouseenter', onMouseEnter);
@@ -35,6 +37,7 @@ export const Cursor = () => {
     document.removeEventListener('mousedown', onMouseDown);
     document.removeEventListener('mouseup', onMouseUp);
   };
+
   const onMouseLeave = () => {
     setHidden(true);
   };
@@ -61,10 +64,12 @@ export const Cursor = () => {
     'cursor--hidden': hidden,
     'cursor--link-hovered': linkHovered
   });
+
   const isMobile = () => {
     const ua = navigator.userAgent;
     return /Android|Mobi/i.test(ua);
   };
+
   if (typeof navigator !== 'undefined' && isMobile()) return null;
   return (
     <div

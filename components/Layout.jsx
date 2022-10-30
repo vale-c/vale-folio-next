@@ -1,9 +1,6 @@
-import React, { useRef } from 'react';
-import { NavHeader } from './NavHeader';
-import { Cursor } from './Cursor';
-import { Footer } from './Footer';
+import React, { useState, useEffect, useRef } from 'react';
 import { Loader } from './Loader';
-import { motion } from 'framer-motion';
+import { motion, useAnimation } from 'framer-motion';
 
 const variants = {
   hidden: { opacity: 0, x: -200, y: 0 },
@@ -11,7 +8,21 @@ const variants = {
   exit: { opacity: 0, x: 0, y: -100 }
 };
 
-const Layout = ({ isLoading, ...props }) => {
+export const Layout = ({ ...props }) => {
+  const [isLoading, setIsLoading] = useState(true);
+  const controls = useAnimation();
+
+  useEffect(() => {
+    if (!isLoading) {
+      setTimeout(() => {
+        controls.start('enter');
+      }, 500);
+    } else {
+      controls.start('hidden');
+      setTimeout(() => setIsLoading(false), 1000);
+    }
+  }, [isLoading, controls]);
+
   const containerRef = useRef(null);
   if (isLoading) {
     return <Loader />;
@@ -24,14 +35,9 @@ const Layout = ({ isLoading, ...props }) => {
       variants={variants}
       transition={{ type: 'linear' }}
     >
-      <div data-scroll-container className="w-screen" ref={containerRef}>
-        <NavHeader />
+      <div data-scroll-container ref={containerRef}>
         {props.children}
       </div>
-      <Cursor />
-      <Footer />
     </motion.main>
   );
 };
-
-export default Layout;
