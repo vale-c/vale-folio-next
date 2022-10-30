@@ -23,13 +23,12 @@ export function Blog({ posts }) {
             const tags = post?.properties?.Tags?.multi_select ?? [];
             const dates = post?.properties?.Date?.date?.start ?? null;
             const postUrl = post?.id ?? null;
-
             return (
               <Fragment key={postUrl}>
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="shadow-lg rounded-b-lg"
+                  className="bg-gray-50 dark:bg-gray-800 shadow-lg rounded-b-lg"
                 >
                   <div className="mb-4 pb-6">
                     <a href={`/${postUrl}`} className="relative">
