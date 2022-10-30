@@ -110,7 +110,7 @@ const Heading = ({ text, level }) => {
       );
     case 'heading_3':
       return (
-        <h3 className="my-2 text-lg font-bold tracking-tight text-black md:text-xl">
+        <h3 className="my-2 text-lg font-bold tracking-tight text-black dark:text-gray-200 md:text-xl">
           <SpanText text={text} />
         </h3>
       );
