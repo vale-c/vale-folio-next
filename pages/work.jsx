@@ -48,7 +48,7 @@ const Work = ({ isWorkPage = true }) => {
               Coding Projects
             </Title>
             <h3 className="font-telex mb-4 text-gray-700 dark:text-gray-50">
-              Here are some of my coding projects.
+              Here are <em>some</em> of my coding projects.
             </h3>
             <span className="font-lato mb-4 text-gray-700 dark:text-gray-50">
               Check out my{' '}
@@ -98,13 +98,12 @@ const Work = ({ isWorkPage = true }) => {
               </InnerCardText>
             </ProjectCard>
             <ProjectCard
-              title="Rock Paper Scissors"
-              link="https://github.com/vale-c/rock-paper-scissors"
-              background="linear-gradient(to right, #76a7f4 0%, #6071d7 100%)"
+              title="YouTube Focus"
+              link="https://github.com/vale-c/youtube_focus"
+              background="linear-gradient(to right, #FF416C 0%, #FF4B2B 100%)"
             >
               <InnerCardText>
-                A simple Rock Paper Scissors game I made as a Frontend Mentor
-                challenge.
+              A Chrome Extension to blur out YouTube Video Thumbnails (& comments) in order to enhance focus while minimizing distractions and context-switching.
               </InnerCardText>
             </ProjectCard>
           </ProjectsWrapper>
@@ -119,7 +118,7 @@ const Work = ({ isWorkPage = true }) => {
               <ProjectCard
                 title="Classically"
                 link="https://dribbble.com/shots/6024845-Classy-Classical-Music-App-Concept"
-                background="linear-gradient(to right, #FF416C 0%, #FF4B2B 100%)"
+                background="linear-gradient(to right, #76a7f4 0%, #6071d7 100%)"
               >
                 <InnerCardText>
                   This project is a concept for an educational app about
