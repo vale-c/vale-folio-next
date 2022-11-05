@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useRouter } from 'next/router';
 import { Loader } from './Loader';
 import { motion, useAnimation } from 'framer-motion';
 
@@ -9,35 +10,42 @@ const variants = {
 };
 
 export const Layout = ({ ...props }) => {
-  const [isLoading, setIsLoading] = useState(true);
   const controls = useAnimation();
+  const router = useRouter();
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    if (!isLoading) {
-      setTimeout(() => {
-        controls.start('enter');
-      }, 500);
-    } else {
-      controls.start('hidden');
-      setTimeout(() => setIsLoading(false), 1000);
-    }
-  }, [isLoading, controls]);
+    const handleStart = (url) =>
+      url !== router.pathname && controls.start('enter') && setLoading(true);
+    const handleComplete = (url) =>
+      url === router.pathname && controls.start('hidden') && setLoading(false);
+
+    router.events.on('routeChangeStart', handleStart);
+    router.events.on('routeChangeComplete', handleComplete);
+    router.events.on('routeChangeError', handleComplete);
+
+    return () => {
+      router.events.off('routeChangeStart', handleStart);
+      router.events.off('routeChangeComplete', handleComplete);
+      router.events.off('routeChangeError', handleComplete);
+    };
+  });
 
   const containerRef = useRef(null);
-  if (isLoading) {
-    return <Loader />;
-  }
-  return (
-    <motion.main
+
+  return loading ? (
+    <Loader />
+  ) : (
+    <motion.div
+      ref={containerRef}
       initial="hidden"
       animate="enter"
       exit="exit"
       variants={variants}
-      transition={{ type: 'linear' }}
+      transition={{ type: 'spring', bounce: 0.25, duration: 0.3 }}
+      className="flex flex-col items-center justify-center pt-24"
     >
-      <div data-scroll-container ref={containerRef}>
-        {props.children}
-      </div>
-    </motion.main>
+      {props.children}
+    </motion.div>
   );
 };
