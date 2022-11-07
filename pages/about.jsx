@@ -71,7 +71,7 @@ const AboutPage = () => {
                 a11y
               </a>{' '}
               best-practices.
-              <br /> I truly enjoy thinking about <i>Usability</i>, and love to
+              <br />I truly enjoy thinking about <i>Usability</i>, and love to
               make great Designs come to life through <code>code</code>.
             </p>
             <p className="mb-3 font-telex max-w-3xl text-center md:text-left">
@@ -104,6 +104,42 @@ const AboutPage = () => {
                 Interactive Intelligence
               </a>
               .
+            </p>
+            <p className="font-telex max-w-3xl text-center md:text-left">
+              {/* I love experimenting with new technologies and I am always looking
+              for new ways to improve my skills. */}
+              I am fascinated with the field of{' '}
+              <strong>data visualization</strong> and I love working with{' '}
+              <a
+                className="text-indigo-400 dark:text-green-400 font-bold hover:underline"
+                href="https://d3js.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                D3.js
+              </a>
+              ,{' '}
+              <a
+                className="text-indigo-400 dark:text-green-400 font-bold hover:underline"
+                href="https://threejs.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Three.js
+              </a>
+              , and{' '}
+              <a
+                className="text-indigo-400 dark:text-green-400 font-bold hover:underline"
+                href="https://p5js.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                p5.js
+              </a>
+              , which are awesome libraries that make it possible to implement
+              incredibly expressive and interactive visualizations in the
+              browser.
+              <br />
             </p>
             <p className="font-telex max-w-3xl text-center md:text-left">
               In my spare time I enjoy playing the drums 🥁 and the guitar 🎸,

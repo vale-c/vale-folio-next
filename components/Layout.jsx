@@ -43,7 +43,7 @@ export const Layout = ({ ...props }) => {
       exit="exit"
       variants={variants}
       transition={{ type: 'spring', bounce: 0.25, duration: 0.3 }}
-      className="flex flex-col items-center justify-center pt-24"
+      className="flex flex-col items-center justify-center"
     >
       {props.children}
     </motion.div>

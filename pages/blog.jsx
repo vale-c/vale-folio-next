@@ -10,7 +10,7 @@ export function Blog({ posts }) {
   return (
     <Layout>
       <Container>
-        <h2 className="text-2xl font-roboto mt-24 mb-10 text-gray-800 dark:text-gray-50">
+        <h2 className="text-4xl font-roboto mt-20 mb-8 text-gray-800 dark:text-gray-50 sm:mt-24">
           Blog Posts
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
@@ -28,7 +28,7 @@ export function Blog({ posts }) {
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="bg-gray-50 dark:bg-gray-800 shadow-lg rounded-b-lg"
+                  className="sm:bg-gray-50 dark:bg-gray-800 shadow-lg rounded-b-lg"
                 >
                   <div className="mb-4 pb-6">
                     <a href={`/${postUrl}`} className="relative">
