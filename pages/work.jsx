@@ -77,7 +77,7 @@ const Work = ({ isWorkPage = true }) => {
           <ProjectCard
             title="Momentum Dashboard"
             link="https://momentumdash.netlify.com/"
-            background="linear-gradient(to right, #ffbe64 0%, #ffaa64 100%)"
+            background="linear-gradient(to right, #41bdea 0%, #2759f0 100%)"
           >
             <InnerCardText>
               A React Web App inspired by the popular Momentum Chrome Extension
@@ -85,14 +85,13 @@ const Work = ({ isWorkPage = true }) => {
             </InnerCardText>
           </ProjectCard>
           <ProjectCard
-            title="City Stats"
-            link="https://github.com/vale-c/CityStatsExplorer"
+            title="Three.js Sphere"
+            link="https://three-js-sphere-app.vercel.app/"
             background="linear-gradient(to right, #fface4 0%, #ab87ff 100%)"
           >
             <InnerCardText>
-              City Stats is a React Web App that connects to the Teleport API to
-              help you find out and compare some of the most useful parameters
-              of all the major cities in the world.
+              A Three.js project that renders a sphere with a custom texture and
+              lighting.
             </InnerCardText>
           </ProjectCard>
           <ProjectCard
@@ -104,6 +103,26 @@ const Work = ({ isWorkPage = true }) => {
               A Chrome Extension to blur out YouTube Video Thumbnails (&
               comments) in order to enhance focus while minimizing distractions
               and context-switching.
+            </InnerCardText>
+          </ProjectCard>
+          <ProjectCard
+            title="City Stats"
+            link="https://citystats.netlify.com/"
+            background="linear-gradient(to right, #e0c3fc 0%, #8ec5fc 100%)"
+          >
+            <InnerCardText>
+              City Stats is a React Web App that connects to the Teleport API to
+              help you find out and compare some of the most useful parameters
+              of all the major cities in the world.
+            </InnerCardText>
+          </ProjectCard>
+          <ProjectCard
+            title="Job Listings"
+            link="https://job-listing-project.vercel.app/"
+            background="linear-gradient(to right, #45cdb9 0%, #7fcfc5 100%)"
+          >
+            <InnerCardText>
+              This is a landing page for a job listing portal. It was built as a challenge for the Frontend Mentor community.
             </InnerCardText>
           </ProjectCard>
         </ProjectsWrapper>
