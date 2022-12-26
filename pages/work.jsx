@@ -122,14 +122,15 @@ const Work = ({ isWorkPage = true }) => {
             background="linear-gradient(to right, #45cdb9 0%, #7fcfc5 100%)"
           >
             <InnerCardText>
-              This is a landing page for a job listing portal. It was built as a challenge for the Frontend Mentor community.
+              This is a landing page for a job listing portal. It was built as a
+              challenge for the Frontend Mentor community.
             </InnerCardText>
           </ProjectCard>
         </ProjectsWrapper>
-        <Title className="font-roboto text-gray-800 dark:text-gray-50 mt-8 z-4">
+        <Title className="font-roboto text-gray-800 dark:text-gray-50 mt-8 z-30">
           Design Projects
         </Title>
-        <h3 className="font-telex mb-8 text-gray-700 dark:text-gray-50">
+        <h3 className="font-telex mb-8 text-gray-700 dark:text-gray-50 z-30">
           Here are some of my Design projects.
         </h3>
         <div className="mb-4">
