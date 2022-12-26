@@ -57,7 +57,23 @@ const Contact = () => (
           >
             GitHub
           </a>{' '}
-          💻 or{' '}
+          💻 ,{' '}
+          <a
+            className="font-telex font-bold hover:underline"
+            href="https://www.linkedin.com/in/calabresevalentina/"
+            target="_blank"
+          >
+            LinkedIn
+          </a>{' '}
+          💼 ,{' '}
+          <a
+            className="font-telex font-bold hover:underline"
+            href="https://medium.com/@vale-dev"
+            target="_blank"
+          >
+            Medium
+          </a>{' '}
+          📝 ,{' '}
           <a
             className="font-telex font-bold hover:underline"
             href="https://www.twitter.com/CherriePie4897/"
