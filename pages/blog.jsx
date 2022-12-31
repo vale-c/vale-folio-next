@@ -40,7 +40,7 @@ export function Blog({ posts }) {
                         }
                       />
                       <div className="p-4">
-                        <div className="text-sm font-light mb-1 text-gray-400">
+                        <div className="font-roboto text-sm font-light mb-1 text-gray-700 dark:text-gray-300">
                           {dates}
                         </div>
                         <div className="text-lg font-semibold mb-1 text-gray-700 dark:text-gray-50">
@@ -53,7 +53,7 @@ export function Blog({ posts }) {
                       <div className="mx-4 flex flex-wrap">
                         {tags.map((tag, id) => (
                           <span
-                            className="outline outline-2 outline-offset-1 outline-indigo-300 dark:outline-green-300 truncate text-xs font-light font-roboto mb-2 mr-2 p-2 rounded max-h-8"
+                            className="font-telex outline outline-2 outline-offset-1 outline-indigo-300 dark:outline-green-300 truncate text-xs font-light  mb-2 mr-2 p-2 rounded max-h-8"
                             key={id}
                           >
                             {tag.name}
