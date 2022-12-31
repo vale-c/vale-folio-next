@@ -27,7 +27,7 @@ export default function Home({ posts }) {
               Vale
             </span>
           </h1>
-          <p className="font-telex mt-4 text-xl text-center text-gray-600 dark:text-gray-400">
+          <p className="font-telex mt-4 text-xl text-center text-gray-600 dark:text-gray-200">
             A <span className="hover:animate-ping">creative</span> Software
             Engineer 👩🏻‍💻 who loves transforming
             <br />
