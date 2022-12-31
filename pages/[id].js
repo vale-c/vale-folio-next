@@ -26,7 +26,7 @@ export default function Post({ page, blocks }) {
         </div>
         <div className="relative mt-10">
           <div
-            className="text-5xl mt-56"
+            className="text-5xl mt-48"
             alt={page.properties.slug.rich_text[0].plain_text}
           >
             {page.icon.emoji}
