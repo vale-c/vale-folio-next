@@ -12,7 +12,7 @@ import { hidden } from '../styles/utils';
 export const NavHeader = () => {
   const [open, setOpen] = useState(false);
   return (
-    <>
+    <div className="mb-8">
       <ul
         hidden={hidden}
         className="sm:flex pointer-events-auto items-center antialiased font-medium text-xs tracking-widest z-10"
@@ -31,7 +31,7 @@ export const NavHeader = () => {
             </span>
           </Link>
           <LayoutGroup>
-            <div className="flex align-center justify-center ml-auto">
+            <ul className="flex align-center justify-center ml-auto">
               {headerNavLinks
                 .filter((link) => link.title !== 'Home')
                 .map((link) => (
@@ -42,7 +42,7 @@ export const NavHeader = () => {
                     <Link href={link.slug}>{link.title}</Link>
                   </li>
                 ))}
-            </div>
+            </ul>
             <div className="ml-4 sm:block">
               <ToggleButton />
             </div>
@@ -78,6 +78,7 @@ export const NavHeader = () => {
               </motion.div>
               {/* close button */}
               <button
+                aria-label="close"
                 className="hover:rotate-6 font-bold absolute bottom-0 py-6 left-6"
                 onClick={() => setOpen(false)}
               >
@@ -100,6 +101,6 @@ export const NavHeader = () => {
           )}
         </div>
       </div>
-    </>
+    </div>
   );
 };
