@@ -19,7 +19,7 @@ class Circle extends React.Component {
 
     /*
       Waporwave Palettes
-      STANDARD: https://www.color-hex.com/color-palette/10221/ 
+      STANDARD: https://www.color-hex.com/color-palette/10221/
       PASTEL: https://www.color-hex.com/color-palette/61574
     */
     let colors = [
@@ -34,10 +34,21 @@ class Circle extends React.Component {
       p.color('#b967ff'),
       p.color('#fffb96')
     ];
+
+    const songs = [
+      'celebrate',
+      'lofi-chill-beat',
+      'lofi-vibes',
+      'uncut-gems',
+      'wander'
+    ];
+
+    const randomSong = songs[Math.floor(Math.random() * songs.length)] + '.mp3';
+
     // Loads the music file into p5.js to play on click
     p.preload = () => {
       p.soundFormats('mp3');
-      song = p.loadSound('/resources/song.mp3');
+      song = p.loadSound('/resources/' + randomSong);
     };
 
     // Initial setup to create canvas and audio analyzers
@@ -132,27 +143,6 @@ class Circle extends React.Component {
             >
               p5.js
             </a>
-            <br />
-            <br />
-            In case you're wondering, the{' '}
-            <a
-              href="https://www.youtube.com/watch?v=f_TPN1EDnx4"
-              target="_blank"
-              rel="noreferrer"
-            >
-              song
-            </a>{' '}
-            is Brad Pitt from{' '}
-            <a
-              className="mb-2"
-              href="https://it.wikipedia.org/wiki/M%C3%98"
-              target="_blank"
-              rel="noreferrer"
-            >
-              MØ
-            </a>
-            .
-            <br />
             <br />
             <b>Click</b> on the image to <b>start/stop</b> the song.
             <br />
