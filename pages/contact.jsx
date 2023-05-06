@@ -36,7 +36,7 @@ const Contact = () => (
           </div>
           <a
             className="font-telex font-bold hover:underline"
-            href="https://dribbble.com/blueberrymuffin95"
+            href="https://dribbble.com/frontendvale"
             target="_blank"
           >
             Dribbble
@@ -76,7 +76,7 @@ const Contact = () => (
           📝 ,{' '}
           <a
             className="font-telex font-bold hover:underline"
-            href="https://www.twitter.com/CherriePie4897/"
+            href="https://www.twitter.com/frontendvale/"
             target="_blank"
           >
             Twitter
