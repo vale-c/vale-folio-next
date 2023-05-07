@@ -59,7 +59,7 @@ const SocialTray = ({ social = true, setOnce = false }) => {
             onClick={() => setOnce && setOnce(true)}
             rel="noreferrer"
             target="_blank"
-            href="https://twitter.com/CherriePie4897"
+            href="https://twitter.com/frontendvale"
           >
             <TwitterIcon className="h-10 w-10" />
           </a>
@@ -91,7 +91,7 @@ const SocialTray = ({ social = true, setOnce = false }) => {
             onClick={() => setOnce && setOnce(true)}
             rel="noreferrer"
             target="_blank"
-            href="https://dribbble.com/blueberrymuffin95"
+            href="https://dribbble.com/frontendvale"
           >
             <DribbbleIcon className="h-10 w-10" />
           </a>
