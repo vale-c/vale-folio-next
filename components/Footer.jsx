@@ -5,10 +5,8 @@ export const Footer = () => {
   return (
     <footer className="font-telex text-center text-gray-700 dark:text-gray-50 pin-b p-6 text-md lg:text-lg">
       © {new Date().getFullYear()}, Built with ☕️ & 💖 by{' '}
-      <Link href="/about">
-        <Link className="font-bold hover:underline" href="/about">
-          Vale
-        </Link>
+      <Link className="font-bold hover:underline" href="/about">
+        Vale
       </Link>
     </footer>
   );

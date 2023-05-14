@@ -12,12 +12,12 @@ export const headerNavLinks = [
     slug: '/blog/'
   },
   {
-    title: 'Work',
-    slug: '/work/'
+    title: 'CV',
+    slug: 'https://drive.google.com/file/d/1Z2qbJW7T4dGVoqhX2Li6QSl7pzhrvf5-/view?usp=sharing'
   },
   {
-    title: 'Creative',
-    slug: '/creative/'
+    title: 'Work',
+    slug: '/work/'
   },
   {
     title: 'Contact',

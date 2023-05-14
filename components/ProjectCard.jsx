@@ -17,6 +17,7 @@ export const ProjectsWrapper = styled.div`
 `;
 
 export const InnerCardText = styled.p`
+  font-family: 'Telex', sans-serif;
   color: white;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 `;
@@ -41,7 +42,7 @@ export const ProjectCard = ({ title, link, children, background }) => (
       {children}
     </div>
     <div
-      className="uppercase text-white text-sm md:text-3xl xl:text-4xl tracking-wide pt-8"
+      className="uppercase font-roboto text-white text-sm md:text-3xl xl:text-4xl tracking-wide pt-8"
       style={{ textShadow: '0 2px 10px rgba(0, 0, 0, 0.3)' }}
     >
       {title}

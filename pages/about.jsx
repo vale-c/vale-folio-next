@@ -54,8 +54,8 @@ const AboutPage = () => {
               </div>
             </div>
             <p className="mb-3 font-telex max-w-3xl text-center md:text-left">
-              My name is Valentina and I am a Software Engineer with a knack for
-              Design Systems & an interest in{' '}
+              My name is Valentina and I am a <strong>Front-end </strong>
+              Software Engineer with a knack for Design Systems & an interest in{' '}
               <a
                 className="font-bold hover:underline"
                 href="https://www.interaction-design.org/literature/topics/user-centered-design#:~:text=User%2Dcentered%20design%20(UCD),and%20accessible%20products%20for%20them."
@@ -97,54 +97,23 @@ const AboutPage = () => {
               program) with a specialization in{' '}
               <a
                 className="text-indigo-400 dark:text-green-400 font-bold hover:underline"
-                href="https://omscs.gatech.edu/specialization-interactive-intelligence"
+                href="https://omscs.gatech.edu/specialization-human-computer-interaction"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Interactive Intelligence
+                Human-Computer Interaction
               </a>
               .
             </p>
             <p className="font-telex max-w-3xl text-center md:text-left">
-              {/* I love experimenting with new technologies and I am always looking
-              for new ways to improve my skills. */}
-              I am fascinated with the field of{' '}
-              <strong>data visualization</strong> and I love working with{' '}
-              <a
-                className="text-indigo-400 dark:text-green-400 font-bold hover:underline"
-                href="https://d3js.org/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                D3.js
-              </a>
-              ,{' '}
-              <a
-                className="text-indigo-400 dark:text-green-400 font-bold hover:underline"
-                href="https://threejs.org/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Three.js
-              </a>
-              , and{' '}
-              <a
-                className="text-indigo-400 dark:text-green-400 font-bold hover:underline"
-                href="https://p5js.org/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                p5.js
-              </a>
-              , which are awesome libraries that make it possible to implement
-              incredibly expressive and interactive visualizations in the
-              browser.
+              I love experimenting with new technologies and I am always looking
+              for new ways to improve my skills and learn new things.
               <br />
             </p>
             <p className="font-telex max-w-3xl text-center md:text-left">
               In my spare time I enjoy playing the drums 🥁 and the guitar 🎸,
-              reading books 📚 about personal finance & self-improvement ✨, and
-              playing tennis 🎾.{' '}
+              skateboarding 🛹, reading books 📚 about personal finance &
+              self-improvement ✨, and playing tennis 🎾.{' '}
             </p>
           </div>
         </div>

@@ -30,7 +30,7 @@ const Title = styled.h1`
 const Work = ({ isWorkPage = true }) => {
   return (
     <Container>
-      <div className="sm:py-8 flex flex-col pt-16">
+      <div className="sm:py-12 flex flex-col pt-8">
         {isWorkPage && (
           <div className="sm:px-0 py-8">
             <div className="fixed top-0 left-0 w-screen">
@@ -66,7 +66,7 @@ const Work = ({ isWorkPage = true }) => {
           <ProjectCard
             title="Vim Mentor App"
             link="https://vim-mentor-project.vercel.app/"
-            background="linear-gradient(to right, #bce784 0%, #5dd39e 100%)"
+            background="linear-gradient(to right, #2cff8e 0%, #00ff94 50%, #1ce488 100%)"
           >
             <InnerCardText>
               An educational Web App to help other developers learn Vim which I
@@ -85,24 +85,23 @@ const Work = ({ isWorkPage = true }) => {
             </InnerCardText>
           </ProjectCard>
           <ProjectCard
+            title="Music Visualizer"
+            link="/creative"
+            background="linear-gradient(to right, #ff6ad5 0%, #b967ff 50%, #24e4ff 100%)"
+          >
+            <InnerCardText>
+              A Music Visualizer built with p5.js that generates a unique visual
+              based on the music that's being played.
+            </InnerCardText>
+          </ProjectCard>
+          <ProjectCard
             title="Three.js Sphere"
             link="https://three-js-sphere-app.vercel.app/"
-            background="linear-gradient(to right, #fface4 0%, #ab87ff 100%)"
+            background="linear-gradient(to right, #ffed72 0%, #ffcb71 100%)"
           >
             <InnerCardText>
               A Three.js project that renders a sphere with a custom texture and
               lighting.
-            </InnerCardText>
-          </ProjectCard>
-          <ProjectCard
-            title="YouTube Focus"
-            link="https://github.com/vale-c/youtube_focus"
-            background="linear-gradient(to right, #FF416C 0%, #FF4B2B 100%)"
-          >
-            <InnerCardText>
-              A Chrome Extension to blur out YouTube Video Thumbnails (&
-              comments) in order to enhance focus while minimizing distractions
-              and context-switching.
             </InnerCardText>
           </ProjectCard>
           <ProjectCard
@@ -117,9 +116,20 @@ const Work = ({ isWorkPage = true }) => {
             </InnerCardText>
           </ProjectCard>
           <ProjectCard
+            title="YouTube Focus"
+            link="https://github.com/vale-c/youtube_focus"
+            background="linear-gradient(to right, #FF416C 0%, #FF4B2B 100%)"
+          >
+            <InnerCardText>
+              A Chrome Extension to blur out YouTube Video Thumbnails (&
+              comments) in order to enhance focus while minimizing distractions
+              and context-switching.
+            </InnerCardText>
+          </ProjectCard>
+          <ProjectCard
             title="Job Listings"
             link="https://job-listing-project.vercel.app/"
-            background="linear-gradient(to right, #45cdb9 0%, #7fcfc5 100%)"
+            background="linear-gradient(to right, #0077B5 0%, #0A66C2 50%, #004182 100%)"
           >
             <InnerCardText>
               This is a landing page for a job listing portal. It was built as a
