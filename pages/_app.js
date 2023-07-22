@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps, router }) {
           locale: 'en_IE',
           url,
           description:
-            'The personal website for Valentina Calabrese, creative developer.',
+            'The personal website for Valentina Calabrese, creative front-end developer.',
           site_name: 'Valentina Calabrese | valentinacalabrese.com',
           images: []
         }}

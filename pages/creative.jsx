@@ -8,7 +8,7 @@ const Circle = dynamic(() => import('../components/CodeArt/Circle'), {
 const Creative = () => (
   <Layout>
     <div className="mt-12 mx-4">
-      <div className="font-roboto text-indigo-400 dark:text-green-300 text-3xl md:text-6xl text-center hover:animate-pulse">
+      <div className="font-roboto text-indigo-400 dark:text-green-300 text-3xl md:text-4xl text-center hover:animate-pulse">
         🎧 Music Visualizer
       </div>
       <Circle />

@@ -36,16 +36,17 @@ export const Layout = ({ ...props }) => {
   return loading ? (
     <Loader />
   ) : (
-    <motion.div
-      ref={containerRef}
-      initial="hidden"
-      animate="enter"
-      exit="exit"
-      variants={variants}
-      transition={{ type: 'spring', bounce: 0.25, duration: 0.3 }}
-      className="flex flex-col items-center justify-center"
-    >
-      {props.children}
-    </motion.div>
+    <section className="flex flex-col items-center justify-center">
+      <motion.div
+        ref={containerRef}
+        initial="hidden"
+        animate="enter"
+        exit="exit"
+        variants={variants}
+        transition={{ type: 'spring', bounce: 0.25, duration: 0.3 }}
+      >
+        {props.children}
+      </motion.div>
+    </section>
   );
 };

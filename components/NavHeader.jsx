@@ -51,7 +51,7 @@ export const NavHeader = () => {
       </ul>
       <div className="sm:hidden relative z-10 bg-gray-50 dark:bg-gray-800">
         <div className="sm:flex flex-col items-center justify-center ml-2 text-center">
-          <div className="absolute my-6">
+          <div className="my-6">
             <Burger open={open} setOpen={setOpen} />
           </div>
           {open && (

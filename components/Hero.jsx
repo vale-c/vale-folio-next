@@ -3,10 +3,8 @@ import PropTypes from 'prop-types';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
-const getRandomInt = (min, max) => {
-  let randInt = Math.floor(Math.random() * (max - min + 1)) + min;
-  return randInt;
-};
+const getRandomInt = (min, max) =>
+  Math.floor(Math.random() * (max - min + 1)) + min;
 
 export const Hero = ({ height, image, width }) => (
   <motion.div
@@ -18,7 +16,7 @@ export const Hero = ({ height, image, width }) => (
     }}
     whileTap={{ scale: 0.9 }}
     whileInView={{ opacity: 1 }}
-    className="flex flex-col items-center justify-center pt-24"
+    className="flex flex-col items-center justify-center pt-4 lg:pt-12"
   >
     <Image
       alt="hero-image"
