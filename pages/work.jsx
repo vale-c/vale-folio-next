@@ -66,7 +66,7 @@ const Work = ({ isWorkPage = true }) => {
           <ProjectCard
             title="Vim Mentor App"
             link="https://vim-mentor-project.vercel.app/"
-            background="linear-gradient(to right, #bce784 0%, #5dd39e 100%)"
+            background="linear-gradient(to right, #007f5f 0%, #2b9348 100%)"
           >
             <InnerCardText>
               An educational Web App to help other developers learn Vim which I
@@ -82,6 +82,15 @@ const Work = ({ isWorkPage = true }) => {
             <InnerCardText>
               A React Web App inspired by the popular Momentum Chrome Extension
               with a custom built-in todo list functionality and weather info.
+            </InnerCardText>
+          </ProjectCard>
+          <ProjectCard
+            title="Space X Website Clone"
+            link="https://space-x-clone-seven.vercel.app/"
+            background="linear-gradient(to right, #2c3e50 0%, #4b6cb7 100%)"
+          >
+            <InnerCardText>
+              This is a clone of the Space X website built with Vite.js, TypeScript, and Tailwind CSS.
             </InnerCardText>
           </ProjectCard>
           <ProjectCard
@@ -125,7 +134,7 @@ const Work = ({ isWorkPage = true }) => {
               This is a landing page for a job listing portal. It was built as a
               challenge for the Frontend Mentor community.
             </InnerCardText>
-          </ProjectCard>
+          </ProjectCard>    
         </ProjectsWrapper>
         <Title className="font-roboto text-gray-800 dark:text-gray-50 mt-8 z-30">
           Design Projects
