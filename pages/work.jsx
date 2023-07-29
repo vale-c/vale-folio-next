@@ -85,13 +85,12 @@ const Work = ({ isWorkPage = true }) => {
             </InnerCardText>
           </ProjectCard>
           <ProjectCard
-            title="Music Visualizer"
-            link="/creative"
-            background="linear-gradient(to right, #ff6ad5 0%, #b967ff 50%, #24e4ff 100%)"
+            title="Space X Website Clone"
+            link="https://space-x-clone-seven.vercel.app/"
+            background="linear-gradient(to right, #2c3e50 0%, #4b6cb7 100%)"
           >
             <InnerCardText>
-              A Music Visualizer built with p5.js that generates a unique visual
-              based on the music that's being played.
+              This is a clone of the Space X website built with Vite.js, TypeScript, and Tailwind CSS.
             </InnerCardText>
           </ProjectCard>
           <ProjectCard
@@ -126,16 +125,7 @@ const Work = ({ isWorkPage = true }) => {
               and context-switching.
             </InnerCardText>
           </ProjectCard>
-          <ProjectCard
-            title="Job Listings"
-            link="https://job-listing-project.vercel.app/"
-            background="linear-gradient(to right, #0077B5 0%, #0A66C2 50%, #004182 100%)"
-          >
-            <InnerCardText>
-              This is a landing page for a job listing portal. It was built as a
-              challenge for the Frontend Mentor community.
-            </InnerCardText>
-          </ProjectCard>
+             
         </ProjectsWrapper>
         <Title className="font-roboto text-gray-800 dark:text-gray-50 mt-8 z-30">
           Design Projects
