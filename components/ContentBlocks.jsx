@@ -1,3 +1,6 @@
+const { Prism: SyntaxHighlighter } = require('react-syntax-highlighter');
+const { coldarkDark } = require('react-syntax-highlighter/dist/cjs/styles/prism');
+
 export const RenderBlocks = ({ blocks }) => {
   return blocks.map((block) => {
     const { type, id } = block;
@@ -25,6 +28,17 @@ export const RenderBlocks = ({ blocks }) => {
 
       case 'toggle':
         return <Toggle key={id} value={value} />;
+
+      case 'code':
+        return (
+          <SyntaxHighlighter
+            language={value.language}
+            style={coldarkDark}
+            key={id}
+          >
+             {value.text?.[0]?.plain_text}
+          </SyntaxHighlighter>
+        );
 
       case 'image':
         const src =
