@@ -66,7 +66,7 @@ const Work = ({ isWorkPage = true }) => {
           <ProjectCard
             title="Vim Mentor App"
             link="https://vim-mentor-project.vercel.app/"
-            background="linear-gradient(to right, #2cff8e 0%, #00ff94 50%, #1ce488 100%)"
+            background="linear-gradient(to right, #00c9a7, #00d2a7, #00daa5, #00e3a3, #12eb9f)"
           >
             <InnerCardText>
               An educational Web App to help other developers learn Vim which I
