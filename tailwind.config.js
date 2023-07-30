@@ -19,8 +19,17 @@ module.exports = {
             color: 'white'
           }
         }
-      })
-    }
+      }),
+      animation: {
+        'ribbon_animation': 'ribbon-animation__slideshow 30s infinite linear',
+      },
+      keyframes: {
+        'ribbon-animation__slideshow': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-40%)' },
+        }
+      }
+    },  
   },
   variants: {
     typography: ['dark']
