@@ -40,7 +40,7 @@ export default function Container(props) {
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
-      <main className="container mx-auto px-8">{children}</main>
+      <main className="lg:container lg:mx-auto px-8">{children}</main>
     </>
   );
 }

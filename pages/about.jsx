@@ -29,7 +29,7 @@ const AboutPage = () => {
   return (
     <Layout>
       <div className="relative">
-        <div className="w-full h-screen grid place-content-center mt-12">
+        <div className="w-full h-screen grid place-content-center lg:mt-12 mt-52">
           <div className="py-8">
             <Hero
               image="/images/vale-focus-mode.png"
@@ -40,7 +40,7 @@ const AboutPage = () => {
           <div className="inline-flex flex-col items-center md:items-start space-y-6 px-8 text-lg">
             <div className="inline-flex space-x-2 items-center">
               <div className="w-16 hidden md:flex h-0.5 bg-gray-700 dark:bg-white"></div>
-              <p className="text-sm font-medium text-gray-700 dark:text-white tracking-widest leading-snug uppercase">
+              <p className="lg:text-sm font-medium text-gray-700 dark:text-white tracking-widest leading-snug uppercase text-center">
                 Welcome to my <span className="line-through">nerd</span> dev
                 portfolio 🤓
               </p>
@@ -49,7 +49,7 @@ const AboutPage = () => {
               <span className="font-roboto text-stroke stroke-gray-500 dark:stroke-white">
                 Vale
               </span>
-              <div className="font-roboto text-indigo-400 dark:text-green-300 text-2xl md:text-7xl">
+              <div className="font-roboto text-indigo-400 dark:text-green-300 text-2xl md:text-7xl text-center">
                 Creative Engineer
               </div>
             </div>
@@ -119,7 +119,7 @@ const AboutPage = () => {
         </div>
         <section
           data-scroll-section
-          className="font-roboto pt-32 pb-12 pr-8 flex items-center justify-center md:justify-end text-4xl font-lg tracking-widest leading-tight text-light uppercase antialiased"
+          className="font-roboto md:pt-32 md:pb-12 md:pr-8 mt-48 flex items-center justify-center md:justify-end text-4xl font-lg tracking-widest leading-tight text-light uppercase antialiased"
         >
           what drives me
         </section>
