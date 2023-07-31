@@ -37,7 +37,7 @@ export const NavHeader = () => {
                 .map((link) => (
                   <li
                     key={link.title}
-                    className="text-gray-700 dark:text-gray-100 text-sm lg:text-xl font-bold hover:underline underline-offset-4 px-4 py-2"
+                    className="font-bold hover:before:scale-x-100 hover:before:origin-left text-sm lg:text-xl relative before:w-3/4 before:h-1 before:origin-center before:transition-transform before:duration-300 before:scale-x-0 before:bg-indigo-300 dark:before:bg-green-300 before:absolute before:left-1/2 before:transform before:-translate-x-1/2 before:bottom-0 px-4 py-2"
                   >
                     <Link href={link.slug}>{link.title}</Link>
                   </li>
