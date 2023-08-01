@@ -16,7 +16,7 @@ export const Hero = ({ height, image, width }) => (
     }}
     whileTap={{ scale: 0.9 }}
     whileInView={{ opacity: 1 }}
-    className="flex flex-col items-center justify-center pt-4 lg:pt-12"
+    className="flex flex-col items-center justify-center pt-4 md:pt-12"
   >
     <Image
       alt="hero-image"

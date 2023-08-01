@@ -49,7 +49,8 @@ const Work = ({ isWorkPage = true }) => {
               Coding Projects
             </Title>
             <h3 className="font-telex mb-4 text-gray-700 dark:text-gray-50">
-              Here are <em>some</em> of my coding projects.
+              Here are <p className="inline-block hover:underline">some</p> of
+              my coding projects.
             </h3>
             <span className="font-lato mb-4 text-gray-700 dark:text-gray-50">
               Check out my{' '}
@@ -59,7 +60,7 @@ const Work = ({ isWorkPage = true }) => {
                 rel="noopener noreferrer"
                 className="font-bold text-indigo-400 dark:text-green-400 hover:underline"
               >
-                GitHub page
+                GitHub
               </a>{' '}
               for more.
             </span>
@@ -68,39 +69,38 @@ const Work = ({ isWorkPage = true }) => {
             <ProjectCard
               title="Vim Mentor App"
               link="https://vim-mentor-project.vercel.app/"
-              background="linear-gradient(to right, #00c9a7, #00d2a7, #00daa5, #00e3a3, #12eb9f)"
+              background="linear-gradient(to right, #98e2c6 0%, #66c6ba 100%)"
             >
               <InnerCardText>
                 An educational Web App to help other developers learn Vim which
-                I made as a project for the Educational Technology class I
-                attended at Georgia Tech.
+                I made as a project for the Edu Tech class I attended as part of
+                my MSc in CS at Georgia Tech.
               </InnerCardText>
             </ProjectCard>
             <ProjectCard
               title="Momentum Dashboard"
               link="https://momentum-dash.vercel.app/"
-              background="linear-gradient(to right, #41bdea 0%, #2759f0 100%)"
+              background="linear-gradient(to right, #9cdaf0 0%, #748BDA 100%)"
             >
               <InnerCardText>
-                A React Web App inspired by the popular Momentum Chrome
-                Extension with a custom built-in todo list functionality and
-                weather info.
+                A React App inspired by the popular Momentum Chrome Extension
+                with a built-in todo list functionality and weather info.
               </InnerCardText>
             </ProjectCard>
             <ProjectCard
               title="Space X Website Clone"
               link="https://space-x-clone-seven.vercel.app/"
-              background="linear-gradient(to right, #2c3e50 0%, #4b6cb7 100%)"
+              background="linear-gradient(to right, #6c7b8b 0%, #8796C0 100%)"
             >
               <InnerCardText>
-                This is a clone of the Space X website built with Vite.js,
-                TypeScript, and Tailwind CSS.
+                A replica of the Space X website built with Vite.js, TypeScript,
+                and Tailwind CSS.
               </InnerCardText>
             </ProjectCard>
             <ProjectCard
               title="Three.js Sphere"
               link="https://three-js-sphere-app.vercel.app/"
-              background="linear-gradient(to right, #ffed72 0%, #ffcb71 100%)"
+              background="linear-gradient(to right, #84a9d0 0%, #607893 100%)"
             >
               <InnerCardText>
                 A Three.js project that renders a sphere with a custom texture
@@ -110,7 +110,7 @@ const Work = ({ isWorkPage = true }) => {
             <ProjectCard
               title="City Stats"
               link="https://citystats.netlify.com/"
-              background="linear-gradient(to right, #e0c3fc 0%, #8ec5fc 100%)"
+              background="linear-gradient(to right, #d3c7fd 0%, #8db9fc 100%)"
             >
               <InnerCardText>
                 City Stats is a React Web App that connects to the Teleport API
@@ -121,7 +121,7 @@ const Work = ({ isWorkPage = true }) => {
             <ProjectCard
               title="YouTube Focus"
               link="https://github.com/vale-c/youtube_focus"
-              background="linear-gradient(to right, #FF416C 0%, #FF4B2B 100%)"
+              background="linear-gradient(to right, #FF86A8 0%, #FF7558 100%)"
             >
               <InnerCardText>
                 A Chrome Extension to blur out YouTube Video Thumbnails (&
@@ -133,18 +133,15 @@ const Work = ({ isWorkPage = true }) => {
         </Container>
         <Ribbon />
         <Container>
-          <Title className="font-roboto text-gray-800 dark:text-gray-50 mt-8">
+          <Title className="font-roboto text-gray-800 dark:text-gray-50 my-8">
             Design Projects
           </Title>
-          <h3 className="font-telex mb-8 text-gray-700 dark:text-gray-50">
-            Here are some of my Design projects.
-          </h3>
           <div className="mb-4">
             <ProjectsWrapper>
               <ProjectCard
                 title="Classically"
                 link="https://dribbble.com/shots/6024845-Classy-Classical-Music-App-Concept"
-                background="linear-gradient(to right, #76a7f4 0%, #6071d7 100%)"
+                background="linear-gradient(to right, #a1bdf7 0%, #8d98e1 100%)"
               >
                 <InnerCardText>
                   This project is a concept for an educational app about
@@ -154,14 +151,14 @@ const Work = ({ isWorkPage = true }) => {
               <ProjectCard
                 title="Winter Wonderland"
                 link="https://dribbble.com/shots/14815633-Ski-Mobile-App-Concept"
-                background="linear-gradient(to right, #4568DC 0%, #B06AB3 100%)"
+                background="linear-gradient(to right, #7a87cf 0%, #b889c0 100%)"
               >
                 <InnerCardText>A concept for a Ski Mobile App.</InnerCardText>
               </ProjectCard>
               <ProjectCard
                 title="Safe-fi"
                 link="https://dribbble.com/shots/4307518-Secured"
-                background="linear-gradient(to right, #2c3e50 0%, #3498db 100%)"
+                background="linear-gradient(to right, #6d7f8d 0%, #6ca2e8 100%)"
               >
                 <InnerCardText>
                   This is a paywall mockup for a VPN app allowing people to surf
@@ -171,7 +168,7 @@ const Work = ({ isWorkPage = true }) => {
               <ProjectCard
                 title="Fontsy"
                 link="https://dribbble.com/shots/4307574-Fancy-Fonts"
-                background="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
+                background="linear-gradient(to right, #e2baff 0%, #8cffeb 100%)"
               >
                 <InnerCardText>
                   A fancy paywall for a photo editing app specialized in adding

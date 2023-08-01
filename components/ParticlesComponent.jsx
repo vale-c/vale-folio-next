@@ -57,7 +57,7 @@ export const ParticlesComponent = () => {
               }
             },
             opacity: {
-              value: 1,
+              value: 0.50,
               random: true,
               anim: {
                 enable: true,
