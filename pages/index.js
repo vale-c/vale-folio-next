@@ -30,11 +30,11 @@ export default function Home({ posts }) {
             </h1>
             <p className="font-telex mt-4 text-xl text-center text-gray-600 dark:text-gray-200">
               A <span className="hover:animate-ping">creative 🎨</span>{' '}
-              Front-end Software Engineer 👩🏻‍💻 <br />
-              who loves transforming{' '}
-              <span className="hover:animate-pulse">ideas 💡 </span> into
+              Software Engineer 👩🏻‍💻 <br />
+              who ❤️ transforming{' '}
+              <span className="hover:animate-pulse">ideas 💡 </span><br />into
               memorable{' '}
-              <span className="hover:animate-pulse">experiences 🌟</span>
+              <span className="hover:animate-pulse">experiences ⚡️</span>
             </p>
           </div>
         </Container>
