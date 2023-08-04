@@ -3,8 +3,8 @@ import { bool, func } from 'prop-types';
 import styled from 'styled-components';
 
 const StyledBurger = styled.button`
-  position: absolute;
-  top: 5%;
+  position: fixed;
+  top: 3%;
   left: 2rem;
   display: flex;
   flex-direction: column;

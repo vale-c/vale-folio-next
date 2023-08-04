@@ -50,8 +50,8 @@ export const NavHeader = () => {
         </header>
       </ul>
       <div className="sm:hidden relative z-10 bg-gray-50 dark:bg-gray-800">
-        <div className="sm:flex flex-col items-center justify-center ml-2 text-center">
-          <div className="my-6">
+        <div className="sm:flex flex-col items-center justify-center sm:ml-2 text-center">
+          <div className="sm:my-6">
             <Burger open={open} setOpen={setOpen} />
           </div>
           {open && (
