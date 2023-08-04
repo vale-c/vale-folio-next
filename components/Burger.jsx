@@ -1,33 +1,17 @@
 import { bool, func } from 'prop-types';
-
-import styled from 'styled-components';
-
-const StyledBurger = styled.button`
-  position: fixed;
-  top: 3%;
-  left: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 2rem;
-  height: 2rem;
-  background: transparent;
-  cursor: pointer;
-  padding: 0;
-  z-index: 10;
-
-  &:focus {
-    outline: none;
-  }
-`;
+import React from 'react';
 
 export const Burger = ({ open, setOpen }) => {
   return (
-    <StyledBurger open={open} onClick={() => setOpen(!open)}>
-      <div className="w-8 h-1 dark:bg-white bg-black transition-all" />
-      <div className="w-8 h-1 dark:bg-white bg-black transition-all" />
-      <div className="w-8 h-1 dark:bg-white bg-black transition-all" />
-    </StyledBurger>
+    <button 
+      className="fixed top-6 left-8 flex flex-col justify-between w-6 h-5 bg-transparent cursor-pointer p-0 z-20 focus:outline-none"
+      open={open} 
+      onClick={() => setOpen(!open)}
+    >
+      <div className="w-full h-1 bg-black dark:bg-white transition-all" />
+      <div className="w-full h-1 bg-black dark:bg-white transition-all" />
+      <div className="w-full h-1 bg-black dark:bg-white transition-all" />
+    </button>
   );
 };
 
