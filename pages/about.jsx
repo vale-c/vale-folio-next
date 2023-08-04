@@ -29,7 +29,7 @@ const AboutPage = () => {
   return (
     <Layout>
       <div className="relative">
-        <div className="w-full h-screen grid place-content-center lg:mt-12 mt-52">
+        <div className="w-full h-screen grid place-content-center mt-24">
           <div className="py-8">
             <Hero
               image="/images/vale-focus-mode.png"
@@ -37,7 +37,7 @@ const AboutPage = () => {
               width="250"
             />
           </div>
-          <div className="inline-flex flex-col items-center md:items-start space-y-6 px-8 text-lg">
+          <div className="inline-flex flex-col items-center lg:items-start space-y-6 px-8 text-lg">
             <div className="inline-flex space-x-2 items-center">
               <div className="w-16 hidden md:flex h-0.5 bg-gray-700 dark:bg-white"></div>
               <p className="lg:text-sm font-medium text-gray-700 dark:text-white tracking-widest leading-snug uppercase text-center">
@@ -45,7 +45,7 @@ const AboutPage = () => {
                 portfolio 🤓
               </p>
             </div>
-            <div className="inline-flex items-center md:items-start flex-col text-4xl md:text-7xl font-bold tracking-widest leading-10 uppercase">
+            <div className="inline-flex items-center lg:items-start flex-col text-4xl md:text-7xl font-bold tracking-widest leading-10 uppercase">
               <span className="font-roboto text-stroke stroke-gray-500 dark:stroke-white">
                 Vale
               </span>
