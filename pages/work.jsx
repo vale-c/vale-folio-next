@@ -37,10 +37,10 @@ const Work = ({ isWorkPage = true }) => {
             <Title className="font-roboto mb-4 text-gray-800 dark:text-gray-50">
               Coding Projects
             </Title>
-            <h3 className="font-telex mb-4 text-gray-700 dark:text-gray-50">
+            <h2 className="font-telex mb-4 text-gray-700 dark:text-gray-50">
               Here are <p className="inline-block hover:underline">some</p> of
               my coding projects.
-            </h3>
+            </h2>
             <span className="font-lato mb-4 text-gray-700 dark:text-gray-50">
               Check out my{' '}
               <a
