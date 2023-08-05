@@ -6,7 +6,7 @@ export default function Container(props) {
   const router = useRouter();
   const meta = {
     title: `Vale's Portfolio`,
-    description: `A Next.js portfolio blog, with content powered by Notion and styled with Tailwind CSS.`,
+    description: `A creative Next.js portfolio/blog, with content powered by Notion and styled with Tailwind CSS.`,
     type: 'website',
     image: '/site.png',
     ...customMeta
@@ -32,7 +32,7 @@ export default function Container(props) {
         <meta property="og:title" content={meta.title} />
         <meta property="og:image" content={meta.image ?? '/site.png'} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@CherriePie4897" />
+        <meta name="twitter:site" content="@valecodes" />
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.image ?? '/site.png'} />
@@ -40,7 +40,7 @@ export default function Container(props) {
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
-      <main className="lg:container lg:mx-auto px-8">{children}</main>
+      <main className="px-8 lg:container lg:mx-auto">{children}</main>
     </>
   );
 }

@@ -7,15 +7,12 @@ import { ToggleButton } from '../components/ToggleButton';
 
 import Link from 'next/link';
 
-import { hidden } from '../styles/utils';
-
 export const NavHeader = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="mb-8">
-      <ul
-        hidden={hidden}
-        className="sm:flex pointer-events-auto items-center antialiased font-medium text-xs tracking-widest z-10"
+      <ul 
+        className="sm:flex pointer-events-auto items-center antialiased font-medium text-xs tracking-widest z-10 hidden xl:block"
       >
         <header
           className="top-0 w-screen fixed flex flex-row justify-between items-center tracking-widest

@@ -1,26 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styled from 'styled-components';
+export const ProjectsWrapper = ({ children }) => (
+  <div className="grid gap-8 grid-cols-1 md:grid-cols-2">
+    {children}
+  </div>
+);
 
-export const ProjectsWrapper = styled.div`
-  display: grid;
-  grid-gap: 4rem;
-  grid-template-columns: repeat(2, 1fr);
-  @media (max-width: 1200px) {
-    grid-gap: 3rem;
-  }
-  @media (max-width: 900px) {
-    grid-template-columns: 1fr;
-    grid-gap: 2rem;
-  }
-`;
+ProjectsWrapper.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
-export const InnerCardText = styled.p`
-  font-family: 'Telex', sans-serif;
-  color: white;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-`;
+export const InnerCardText = ({ children }) => (
+  <p className="font-telex text-white text-shadow-md">{children}</p>
+);
+
+InnerCardText.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export const ProjectCard = ({ title, link, children, background }) => (
   <a
@@ -32,17 +29,17 @@ export const ProjectCard = ({ title, link, children, background }) => (
     style={{
       background,
       border: background,
-      transition: 'transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)'
+      transition: 'transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)',
     }}
   >
     <div
-      className="opacity-85 text-sm md:text-base"
+      className="opacity-85 text-sm md:text-base text-shadow-md"
       style={{ textShadow: '0 2px 10px rgba(0, 0, 0, 0.3)' }}
     >
       {children}
     </div>
     <div
-      className="uppercase font-roboto text-white text-sm md:text-3xl xl:text-4xl tracking-wide pt-8"
+      className="uppercase font-roboto text-white text-sm md:text-3xl xl:text-4xl tracking-wide pt-8 text-shadow-md"
       style={{ textShadow: '0 2px 10px rgba(0, 0, 0, 0.3)' }}
     >
       {title}
@@ -55,5 +52,5 @@ ProjectCard.propTypes = {
   children: PropTypes.oneOfType([PropTypes.string, PropTypes.element])
     .isRequired,
   link: PropTypes.string.isRequired,
-  title: PropTypes.string
+  title: PropTypes.string,
 };

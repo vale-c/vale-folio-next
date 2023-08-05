@@ -5,28 +5,13 @@ import {
   InnerCardText
 } from '../components/ProjectCard';
 import Container from '../components/Container';
-import styled from 'styled-components';
-import { screens, textSizes } from '../tailwind';
 import { Ribbon } from '../components/Ribbon';
 
-const Title = styled.h1`
-  font-size: ${textSizes['4xl']};
-  font-weight: 600;
-  line-height: 56px;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  @media (max-width: ${screens.lg}px) {
-    font-size: ${textSizes['2xl']};
-    line-height: 42px;
-  }
-  @media (max-width: ${screens.md}px) {
-    font-size: 32px;
-    line-height: 38px;
-  }
-  @media (max-width: ${screens.sm}px) {
-    font-size: ${textSizes['xl']};
-    line-height: 32px;
-  }
-`;
+const Title = ({ children }) => (
+  <h1 className="mb-8 font-roboto text-4xl font-semibold leading-56 text-shadow-md md:text-3xl md:leading-42 sm:text-2xl sm:leading-32">
+    {children}
+  </h1>
+);
 
 const Work = ({ isWorkPage = true }) => {
   return (
