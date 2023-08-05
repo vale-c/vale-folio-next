@@ -10,7 +10,7 @@ import Link from 'next/link';
 export const NavHeader = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div className="mb-8">
+    <nav className="mb-8">
       <ul className="sm:flex pointer-events-auto items-center antialiased font-medium text-xs tracking-widest z-10 hidden xl:block">
         <header
           className="top-0 w-screen fixed flex flex-row justify-between items-center tracking-widest
@@ -96,6 +96,6 @@ export const NavHeader = () => {
           )}
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
