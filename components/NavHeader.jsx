@@ -11,9 +11,7 @@ export const NavHeader = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="mb-8">
-      <ul 
-        className="sm:flex pointer-events-auto items-center antialiased font-medium text-xs tracking-widest z-10 hidden xl:block"
-      >
+      <ul className="sm:flex pointer-events-auto items-center antialiased font-medium text-xs tracking-widest z-10 hidden xl:block">
         <header
           className="top-0 w-screen fixed flex flex-row justify-between items-center tracking-widest
           h-16 md:h-20 px-12
@@ -63,12 +61,12 @@ export const NavHeader = () => {
                   {headerNavLinks.map((link) => (
                     <li
                       key={link.title}
-                      className="text-gray-700 dark:text-gray-100 text-md font-bold p-4 hover:underline underline-offset-4"
+                      className="font-mono font-semibold text-gray-700 dark:text-gray-100 hover:before:scale-x-100 hover:before:origin-left text-sm relative before:w-3/4 before:h-1 before:origin-center before:transition-transform before:duration-300 before:scale-x-0 before:bg-indigo-300 dark:before:bg-green-300 before:absolute before:left-1/2 before:transform before:-translate-x-1/2 before:bottom-0 p-4"
                     >
                       <Link href={link.slug}>{link.title}</Link>
                     </li>
                   ))}
-                  <div className="mt-3 ml-8 sm:block">
+                  <div className="mt-3 ml-6 sm:block">
                     <ToggleButton />
                   </div>
                 </ul>

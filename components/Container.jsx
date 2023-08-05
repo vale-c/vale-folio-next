@@ -22,10 +22,6 @@ export default function Container(props) {
           property="og:url"
           content={`https://valentincalabrese.com${router.asPath}`}
         />
-        <link
-          rel="canonical"
-          href={`https://valentincalabrese.com/${router.asPath}`}
-        />
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content={meta.title} />
         <meta property="og:description" content={meta.description} />
