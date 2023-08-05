@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Hero } from '../components/Hero';
 import { Layout } from '../components/Layout';
+import Image from 'next/image';
 
 export const variants = {
   hidden: { opacity: 0 },
@@ -147,11 +148,13 @@ const AboutPage = () => {
                   learn
                 </div>
               </div>
-              <img
-                className="object-cover  w-full h-full object-center"
+              <Image
+                className="object-cover w-full h-full object-center"
                 src="/images/book-cinemagraph.gif"
                 alt="book-cinemagraph"
                 draggable={false}
+                width={288}
+                height={384}
               />
             </div>
             <div className="mt-4 font-telex w-64 text-sm">
@@ -180,11 +183,13 @@ const AboutPage = () => {
                   Create
                 </div>
               </div>
-              <img
+              <Image
                 className="object-cover rounded-lg w-full h-full object-center"
                 src="/images/create.gif"
                 alt="create-vaporwave-gif"
                 draggable={false}
+                width={288}
+                height={384}
               />
             </div>
             <div className="mt-4 font-telex w-64 text-sm">
@@ -213,11 +218,13 @@ const AboutPage = () => {
                   connect
                 </div>
               </div>
-              <img
+              <Image
                 className="object-cover rounded-lg w-full h-full object-center"
                 src="/images/nyan-cat-kawaii.gif"
                 alt="nyan-cat-kawaii-gif"
                 draggable={false}
+                width={288}
+                height={384}
               />
             </div>
             <div className="mt-4 font-telex w-64 text-sm">

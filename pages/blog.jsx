@@ -3,6 +3,7 @@ import { getDatabase } from '../lib/notion';
 import { motion } from 'framer-motion';
 import { Layout } from '../components/Layout';
 import Container from '../components/Container';
+import Image from 'next/image';
 
 export const databaseId = process.env.NOTION_DATABASE_ID;
 
@@ -32,12 +33,14 @@ export function Blog({ posts }) {
                 >
                   <div className="mb-4 pb-6">
                     <a href={`/${postUrl}`} className="relative">
-                      <img
+                      <Image
                         alt="blog-post-cover"
-                        className="h-60 w-full rounded-t-lg object-cover"
+                        className="h-60 w-full rounded-t-lg object-cover aspect-square"
                         src={
                           covers?.[0]?.file?.url || covers?.[0]?.external?.url
                         }
+                        width={300}
+                        height={200}
                       />
                       <div className="p-4">
                         <div className="font-roboto text-sm font-light mb-1 text-gray-700 dark:text-gray-300">

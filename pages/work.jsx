@@ -6,6 +6,7 @@ import {
 } from '../components/ProjectCard';
 import Container from '../components/Container';
 import { Ribbon } from '../components/Ribbon';
+import Image from 'next/image';
 
 const Title = ({ children }) => (
   <h1 className="mb-8 font-roboto text-4xl font-semibold leading-56 text-shadow-md md:text-3xl md:leading-42 sm:text-2xl sm:leading-32">
@@ -20,10 +21,13 @@ const Work = ({ isWorkPage = true }) => {
         {isWorkPage && (
           <div className="sm:px-0 py-8">
             <div className="fixed top-0 left-0 w-screen">
-              <img
+              <Image
                 className="object-cover h-96 w-full opacity-30"
                 src="/images/coding-bg.jpg"
                 alt="bg-cover"
+                priority={true}
+                width={1920}
+                height={1080}
               />
             </div>
           </div>

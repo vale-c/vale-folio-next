@@ -2,6 +2,7 @@ import { getDatabase, getPage, getBlocks } from '../lib/notion';
 import { databaseId } from './index.js';
 import BlogLayout from '../components/BlogLayout';
 import { RenderBlocks } from '../components/ContentBlocks';
+import Image from 'next/image';
 
 export default function Post({ page, blocks }) {
   if (!page || !blocks) {
@@ -14,7 +15,7 @@ export default function Post({ page, blocks }) {
     <BlogLayout data={page} content={blocks}>
       <div className="flex flex-col">
         <div className="absolute top-0 left-0 w-screen">
-          <img
+          <Image
             className="object-cover h-72 w-full opacity-70"
             src={
               page?.cover?.external?.url ||
@@ -22,6 +23,8 @@ export default function Post({ page, blocks }) {
               '/images/bg-cover.jpeg'
             }
             alt={page.Title}
+            width={1200} 
+            height={720} 
           />
         </div>
         <div className="relative mt-10">
