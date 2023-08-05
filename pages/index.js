@@ -5,6 +5,7 @@ import { Hero } from '../components/Hero';
 import { Layout } from '../components/Layout';
 import Container from '../components/Container';
 import Work from './work';
+import { Ribbon } from '../components/Ribbon';
 
 export const databaseId = process.env.NOTION_DATABASE_ID;
 
@@ -40,6 +41,7 @@ export default function Home({ posts }) {
         </Container>
       </Layout>
       <Work isWorkPage={false} />
+      <Ribbon />
       <Layout>
         <Container>
           <Blog posts={posts?.slice(0, showMore)} />
