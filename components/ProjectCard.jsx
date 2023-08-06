@@ -33,13 +33,13 @@ export const ProjectCard = ({ title, link, children, background }) => (
     }}
   >
     <div
-      className="opacity-85 text-sm md:text-base text-shadow-md"
+      className="opacity-85 text-sm text-shadow-md md:text-base"
       style={{ textShadow: '0 2px 10px rgba(0, 0, 0, 0.3)' }}
     >
       {children}
     </div>
     <div
-      className="uppercase font-roboto text-white text-sm md:text-3xl xl:text-4xl tracking-wide pt-8 text-shadow-md"
+      className="uppercase font-roboto text-white text-sm tracking-wide pt-8 text-shadow-md md:text-3xl xl:text-4xl"
       style={{ textShadow: '0 2px 10px rgba(0, 0, 0, 0.3)' }}
     >
       {title}
