@@ -21,7 +21,7 @@ export default function Home({ posts }) {
     <>
       <Layout>
         <Container>
-          <Hero image="/images/vale-wave.png" height="250" width="250" />
+          <Hero image="/images/vale-wave.png" height="300" width="300" />
           <div className="flex flex-col items-center justify-center w-full max-w-2xl px-4 mx-auto mt-8 mb-16 md:px-0">
             <h1 className="font-roboto tracking-wide text-3xl font-bold leading-tight text-center text-gray-900 dark:text-gray-100 md:text-5xl hover:animate-bounce">
               I'm{' '}
@@ -33,7 +33,7 @@ export default function Home({ posts }) {
               A <span className="hover:animate-ping">creative 🎨</span>{' '}
               Software Engineer 👩🏻‍💻 <br />
               who ❤️ transforming{' '}
-              <span className="hover:animate-pulse">ideas 💡 </span><br />into
+              <span>ideas 💡 </span><br />into
               memorable{' '}
               <span className="hover:animate-pulse">experiences ⚡️</span>
             </p>

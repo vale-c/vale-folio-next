@@ -16,8 +16,8 @@ export const headerNavLinks = [
     slug: 'https://drive.google.com/file/d/1KqcTOKtlHYADZ7k-x0cxFr-Xp9icF_Vc/view?usp=sharing'
   },
   {
-    title: 'Work',
-    slug: '/work/'
+    title: 'Projects',
+    slug: '/projects/'
   },
   {
     title: 'Contact',
