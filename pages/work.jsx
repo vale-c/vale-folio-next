@@ -5,7 +5,6 @@ import {
   InnerCardText
 } from '../components/ProjectCard';
 import Container from '../components/Container';
-import { Ribbon } from '../components/Ribbon';
 import Image from 'next/image';
 
 const Title = ({ children }) => (
