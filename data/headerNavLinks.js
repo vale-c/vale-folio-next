@@ -13,7 +13,7 @@ export const headerNavLinks = [
   },
   {
     title: 'CV',
-    slug: 'https://drive.google.com/file/d/1KqcTOKtlHYADZ7k-x0cxFr-Xp9icF_Vc/view?usp=sharing'
+    slug: 'https://drive.google.com/file/d/1o_U1PSaiINcXleAm3jLwWnOiZ8-1ivEa/view?usp=sharing'
   },
   {
     title: 'Work',
