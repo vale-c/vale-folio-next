@@ -35,7 +35,7 @@ const Contact = () => (
           🎨 ,{' '}
           <a
             className="font-telex font-bold hover:underline"
-            href="https://www.instagram.com/frontendvale/"
+            href="https://www.instagram.com/codewithvale/"
             target="_blank"
           >
             Instagram
@@ -67,7 +67,7 @@ const Contact = () => (
           📝 ,{' '}
           <a
             className="font-telex font-bold hover:underline"
-            href="https://www.twitter.com/valecodes/"
+            href="https://www.x.com/valecodes/"
             target="_blank"
           >
             𝕏
