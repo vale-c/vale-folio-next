@@ -7,10 +7,6 @@
 
 <p align="left"> <a href="https://twitter.com/" target="blank"><img src="https://img.shields.io/twitter/follow/?logo=twitter&style=for-the-badge" alt="" /></a> </p>
 
-- 🔭 I’m currently working on my MSc in Computer Science at [Georgia Tech](https://omscs.gatech.edu/)
-
-- 🌱 I’m currently learning about [**Software Development Process**](https://omscs.gatech.edu/cs-6300-software-development-process)
-
 - 👨‍💻 All of my projects are available at [https://valentinacalabrese.com/](https://valentinacalabrese.com/)
 
 - 📝 I also write articles [https://valentinacalabrese.com/blog/](https://valentinacalabrese.com/blog/)
