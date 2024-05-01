@@ -85,7 +85,7 @@ const AboutPage = () => {
               >
                 University of Parma
               </a>{' '}
-              and I am also currently pursuing a MSc in Computer Science at
+              and a MSc in Computer Science from
               Georgia Tech (
               <a
                 className="text-indigo-400 dark:text-green-400 font-bold hover:underline"
